@@ -22,42 +22,37 @@
     </head>
 
     <!-- Menu -->
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="col-xs-12">
-                <!-- Navbar at top of screen -->
-                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><h1>Meredith Onions</h1></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html"><h4>Home</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="graphic_design.html"><h4>Graphic Design</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="about_me.html"><h4>About Me</h4></a>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
+    <div class="flex-row">
+        <!-- Navbar at top of screen -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1>Meredith Onions</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                 aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><h4>Home</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="graphic_design.html"><h4>Graphic Design</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about_me.html"><h4>About Me</h4></a>
+                        </li>
+                    </ul>
                 </div>
-                </nav>
             </div>
-        </div>
+        </nav>
     </div>
     
     <body>
@@ -65,7 +60,7 @@
         <h2 style="text-align: center; padding-top: 20px"><strong>Dealing with FEC Donation Data</strong></h4>
             
         <!-- Carousel of images alongside project description -->
-        <div class="container-large mx-auto" style="width: 100%; padding-left: 10px; padding-right: 10px;">
+        <div class="container-large mx-auto" style="width: 95%; padding-left: 10px; padding-right: 10px;">
             <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-2">
                 <div class="col-xs-12 col-md-8">
                     <!-- Carousel -->
@@ -92,31 +87,37 @@
                 <div class="col-xs-12 col-md-4">
                     <h4 style="padding-top: 20px; font-size: 16pt;"><strong>Project Description</strong></h4>
                     <ul style="font-size: 13pt">
-                        <li>Completed as a part of my coursework for CS:2420: Analyzing Data for Informatics</li>
-                        <li>Implemented in a Jupyter Notebook: <a href="assets/Data_Work/Analyzing_Info/data_cleansing.html" target="_blank">link here</a></li>
-                        <li>Based on pandas dataframes</li>
+                        <li>Completed in CS:2420: Analyzing Data for Informatics</li>
+                        <li>Implemented in a Jupyter Notebook: <a href="assets/Data_Work/Analyzing_Info/fec.html" target="_blank">link here</a></li>
+                        <li>Used donation data from the Federal Election Commission</li>
                         <ul>
-                            <li>Which were created from a csv file supplied with the assignment</li>
+                            <li>Iowa City residents’ donations to House candidates</li>
                         </ul>
-                        <li>Visualizations created with Seaborn</li>
+                        <li>Created pandas dataframes based on the dataset</li>
+                        <li>Mapped party information to each candidate</li>
+                        <li>Streamlined types of employment</li>
+                        <ul>
+                            <li>Ex. different types of teachers all became “Teacher”</li>
+                        </ul>
+                        <li>Displayed data with Matplotlib</li>
                     </ul>
                     <h4 style="padding-top: 0px; font-size: 16pt;"><strong>What I Learned</strong></h4>
                     <ul style="font-size: 13pt;">
-                        <li>What to consider when utilizing a dataset with outliers</li>
-                        <li>How to distinguish between visualizations with and without outliers</li>
-                        <li>How to remove outliers if necessary</li>
+                        <li>How to create dataframes in Python from publicly available data</li>
+                        <li>How to map additional information onto a dataframe</li>
+                        <li>How to visualize a streamlined dataset in Matplotlib</li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <!-- Images of Project (Reiterated) -->
-        <div class="container-large mx-auto justify-content-between" style="width: 95%;">
+        <div class="container-large mx-auto justify-content-between" style="width: 95%; padding-top: 15px;">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-4">
-                <div class="col-xs-12 col-md-6 mx-auto">
+                <div class="col-xs-12 col-md-12 mx-auto">
                     <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/not_unemployed.png" alt="Donations by Occupation">
                 </div>
-                <div class="col-xs-12 col-md-6 mx-auto">
+                <div class="col-xs-12 col-md-12 mx-auto">
                     <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/over_2000.png" alt="Donations over $2000 by Occupation">
                 </div>
             </div>

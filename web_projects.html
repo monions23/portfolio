@@ -17,67 +17,66 @@
     </head>
 
     <!-- Menu -->
-    <div class="row">
-        <div class="col-xs-12">
-            <div class="col-xs-12">
-                <!-- Navbar at top of screen -->
-                <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><h1>Meredith Onions</h1></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html"><h4>Home</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="graphic_design.html"><h4>Graphic Design</h4></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="about_me.html"><h4>About Me</h4></a>
-                            </li>
-                        </ul>
-                    </div>
-                    </div>
+    <div class="flex-row">
+        <!-- Navbar at top of screen -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><h1>Meredith Onions</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                 aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><h4>Home</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="graphic_design.html"><h4>Graphic Design</h4></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about_me.html"><h4>About Me</h4></a>
+                        </li>
+                    </ul>
                 </div>
-                </nav>
             </div>
-        </div>
+        </nav>
     </div>
     
     <body>
-       <h2 style="text-align: center; padding-top: 15px; padding-bottom: 10px; "><strong>Web Projects</strong></h2>
+       <h2 style="text-align: center; padding-top: 25px; padding-bottom: 20px; "><strong>Web Projects</strong></h2>
        <!-- Video demos of web projects - clicking one will bring user to that project's page -->
-      <div class="d-flex justify-content-center flex-wrap" id="videodemo">
-            <div class="flex-column">
-                <a href="story_carnival.html" id="videobutton" style="padding-top: 10px;">
-                    <div class="video-wrapper">
-                        <video class = "blur" autoplay loop muted width="95%" height="95%">
-                            <source src="assets/Web_Projects/Story_Carnival/story_carnival_demo.mp4" style="width: 95%;">
-                        </video>
-                        <div class="vidcontent fade">Story Carnival</div>
-                    </div>
-                </a>
-                <a href="motion_flix.html" id="videobutton" style="padding-top: 10px;">
-                    <div class="video-wrapper">
-                        <video class = "blur" autoplay loop muted width="95%" height="95%">
-                            <source src="assets/Web_Projects/MotionFlix/browsing_demo.mp4" style="width: 95%;">
-                        </video>
-                        <div class="vidcontent fade">MotionFlix</div>
-                    </div>
-                </a>
-            </div>
-      </div>
+       <div class="container-large mx-auto" style="width: 90%;">
+            <div class="row gy-4 row-cols-1 row-cols-sm-12 row-cols-md-12" id="videodemo">
+                <div class="col-xs-12 col-med-12">
+                    <a href="story_carnival.html" id="videobutton" style="padding-top: 10px;">
+                        <div class="video-wrapper">
+                            <video class = "blur" autoplay loop muted width="100%" height="100%">
+                                <source src="assets/Web_Projects/Story_Carnival/story_carnival_demo (1).mp4">
+                            </video>
+                            <div class="vidcontent fade">Story Carnival</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-12 col-med-12">
+                    <a href="motion_flix.html" id="videobutton" style="padding-top: 10px;">
+                        <div class="video-wrapper">
+                            <video class = "blur" autoplay loop muted width="100%" height="100%">
+                                <source src="assets/Web_Projects/MotionFlix/browsing_demo (1).mp4">
+                            </video>
+                            <div class="vidcontent fade">MotionFlix</div>
+                        </div>
+                    </a>
+                </div>
+        </div>
+       </div>
     </body>
 </html>
 </html>
