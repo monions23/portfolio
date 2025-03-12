@@ -40,10 +40,10 @@
                                 <a class="nav-link" aria-current="page" href="index.html"><h4>Home</h4></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
+                                <a class="nav-link active" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
+                                <a class="nav-link" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="graphic_design.html"><h4>Graphic Design</h4></a>
@@ -62,35 +62,32 @@
     
     <body>
         <!-- Page Heading -->
-        <h2 style="text-align: center; padding-top: 20px"><strong> Story Carnival </strong></h4>
+        <h2 style="text-align: center; padding-top: 20px"><strong> Removing Outliers </strong></h4>
             
         <!-- Carousel of images alongside project description -->
         <div class="container-large mx-auto" style="width: 100%; padding-left: 10px; padding-right: 10px;">
             <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-2">
                 <div class="col-xs-12 col-md-8">
                     <!-- Carousel -->
-                    <div id="myCarousel" class="carousel carousel-dark slide" style="padding-top: 10px" data-ride="carousel">
+                    <div id="myCarousel" class="carousel carousel-dark slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_stories.png" alt="First Slide">
+                                <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/box_plot_outliers.png" alt="First Slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_story_card.png" alt="Second Slide">
+                                <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/violin_plot_outliers.png" alt="Second Slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_story_intro.png" alt="Third Slide">
+                                <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/split_violin_outliers.png" alt="Third Slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_story_role.png" alt="Fourth Slide">
+                                <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/box_plot_no_outliers.png" alt="Fourth Slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_story_player_number.png" alt="Fifth Slide">
+                                <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/violin_plot_no_outliers.png" alt="Fifth Slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_players_roles.png" alt="Sixth Slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="assets/Web_Projects/Story_Carnival/Carousel/story_carnival_voice_agent.png" alt="Seventh Slide">
+                                <img class="d-block w-100" src="assets/Data_Work/Analyzing_Info/split_violin_no_outliers.png" alt="Sixth Slide">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -105,46 +102,40 @@
                 </div>
                 <!-- Project Description -->
                 <div class="col-xs-12 col-md-4">
-                    <h4 style="padding-top: 10px; font-size: 16pt;"><strong>Project Description</strong></h4>
+                    <h4 style="padding-top: 80px; font-size: 16pt;"><strong>Project Description</strong></h4>
                     <ul style="font-size: 13pt">
-                        <li>A publicly available website: <a href="https://storycarnival.cs.uiowa.edu" target="_blank">link here</a></li>
-                        <li>Ongoing research project since 2017</li>
-                        <li>Uses imaginative stories to encourage young children to play pretend</li>
+                        <li>Completed as a part of my coursework for CS:2420: Analyzing Data for Informatics</li>
+                        <li>Implemented in a Jupyter Notebook: <a href="assets/Data_Work/Analyzing_Info/data_cleansing.html" target="_blank">link here</a></li>
+                        <li>Based on pandas dataframes</li>
                         <ul>
-                            <li>Helps develop their social and behavioral skills</li>
+                            <li>Which were created from a csv file supplied with the assignment</li>
                         </ul>
-                        <li>Has been tested with a variety of child populations</li>
-                        <ul>
-                            <li>Including neurodivergent kids</li>
-                        </ul>
+                        <li>Visualizations created with Seaborn</li>
                     </ul>
-                    <h4 style="padding-top: 0px; font-size: 16pt;"><strong>My Programming Contributions</strong></h4>
+                    <h4 style="padding-top: 0px; font-size: 16pt;"><strong>What I Learned</strong></h4>
                     <ul style="font-size: 13pt;">
-                        <li>Keeping information up to date</li>
-                        <ul>
-                            <li>Updating: HTML, English and Spanish translations (js dictionaries)</li>
-                            <li>Pushing to development server, making merge requests on production server</li>
-                        </ul>
-                        <li>Going through each story, making sure it works</li>
-                        <ul>
-                            <li>Cartoon visuals</li>
-                            <li>Computer generated voices - pronunciation errors</li>
-                            <ul>
-                                <li>Fixed in Amazon Polly (SSML - encoded phonemes, emphases)</li>
-                                <li>Downloaded as files and pushed to Git</li>
-                            </ul>
-                        </ul>
+                        <li>What to consider when utilizing a dataset with outliers</li>
+                        <li>How to distinguish between visualizations with and without outliers</li>
+                        <li>How to remove outliers if necessary</li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <!-- Demo Video of Project -->
-        <h4 style="font-size: 21pt; text-align: center; padding-top: 10px"> Demo </h4>
-        <div class="flex-column justify-content-center" style="width: 100%; padding-right: 10px; padding-left: 10px;">
-            <video autoplay loop muted width="99%" height="99%">
-                <source src="assets/Web_Projects/Story_Carnival/story_carnival_demo.mp4" style="width: 99%;">
-            </video>
+        <!-- Images of Project (Reiterated) -->
+        <div class="container-large mx-auto justify-content-between" style="width: 95%;">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-4">
+                <div class="col-xs-12 col-md-6 mx-auto">
+                    <img src="assets/Data_Work/Analyzing_Info/box_plot_outliers.png" style="width: 100%; padding-top: 15px;" alt="Box Plot Outliers">
+                    <img src="assets/Data_Work/Analyzing_Info/violin_plot_outliers.png" style="width: 100%; padding-top: 15px;" alt="Violin Plot Outliers">
+                    <img src="assets/Data_Work/Analyzing_Info/split_violin_outliers.png" style="width: 100%; padding-top: 15px;" alt="Split Violin Plot Outliers">
+                </div>
+                <div class="col-xs-12 col-md-6 mx-auto">
+                    <img src="assets/Data_Work/Analyzing_Info/box_plot_no_outliers.png" style="width: 100%; padding-top: 15px;" alt="Box Plot No Outliers">
+                    <img src="assets/Data_Work/Analyzing_Info/violin_plot_no_outliers.png" style="width: 100%; padding-top: 15px;" alt="Violin Plot No Outliers">
+                    <img src="assets/Data_Work/Analyzing_Info/split_violin_no_outliers.png" style="width: 100%; padding-top: 15px;" alt="Split Violin Plot No Outliers">
+                </div>
+            </div>
         </div>
     </body>
 </html>
