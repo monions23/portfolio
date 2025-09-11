@@ -13,105 +13,82 @@
         crossorigin="anonymous"></script>
 
         <!-- My Scripts -->
-        <link rel="stylesheet" href="image_hover.css">
+        <link rel="stylesheet" href="base.css">
     </head>
 
     <!-- Menu -->
-    <div class="flex-row">
-        <!-- Navbar at top of screen -->
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><h1>Meredith Onions</h1></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                 aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html"><h4>Home</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="data_projects.html"><h4>Data Work</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="web_projects.html"><h4>Web Projects</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="graphic_design.html"><h4>Graphic Design</h4></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="about_me.html"><h4>About Me</h4></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <!-- Navbar at top of screen -->
+    <div class="topnav">
+        <div class="links">
+            <a class = "link-item" href="index.html">Home</a>
+            <a class = "link-item" href="data_projects.html">Data Visualization</a>
+            <a class = "link-item" href="web_projects.html">Web Projects</a>
+            <!-- <a class = "link=item" href="banner_data_stats/bannerdatastats.html">Banner Data Stats</a> -->
+            <a class = "link-item active" href = "graphic_design.html">Graphic Design</a>
+            <a class = "link-item" href = "about_me.html">About Me</a>
+            <!-- <a class = "link-item" href = "coursedemand-full new data/demo-law6120/index.html">New Data</a> -->
+        </div>
     </div>
-
-    <br>
     
     
     <body>
         <!-- Display of graphic design projects - clickable images that take user to corresponding project page -->
-        <h2 style="text-align: center; "><strong>Graphic Design Work</strong></h2>
 
         <div class="container-large mx-auto" style="width: 95%; padding-top: 10px;">
             <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-                <div class="col-xs-12 col-md-4" style="padding-top: 10px">
-                    <a href="max_low_poly.html">
-                        <div class="img-wrapper">
-                            <img class = "blur" src="assets/Graphic_Design/Max_Low_Poly/max_low_poly_blue.png" alt = "Low Poly Portrait">
-                            <div class="content fade">Low Poly Portrait</div>
-                        </div>
-                    </a>
-                    <a href="mandala.html">
-                        <div class="img-wrapper">
-                            <img class = "blur" src="assets/Graphic_Design/Mandala/mandala_warm.png" alt = "Mandala">
-                            <div class="content fade">Mandala</div>
-                        </div>
-                    </a>
-                    <a href="location_photo.html">
-                        <div class="img-wrapper">
-                            <img class = "blur" src="assets/Graphic_Design/Main_Street/main_street_good_tint.png" alt = "Highly Detailed Location Photo">
-                            <div class="content fade">Highly Detailed Location Photo</div>
-                        </div>
-                    </a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="card">
+                        <a href="max_low_poly.html">
+                            <div class="img-wrapper">
+                                <img class = "blur" src="assets/Graphic_Design/Max_Low_Poly/max_low_poly_blue.png" alt = "Low Poly Portrait">
+                                <div class="content fade">Low Poly Portrait</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="mandala.html">
+                            <div class="img-wrapper">
+                                <img class = "blur" src="assets/Graphic_Design/Mandala/mandala_warm.png" alt = "Mandala">
+                                <div class="content fade">Mandala</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-4" style="padding-top: 10px">
-                    <a href="gestalt.html">
-                        <div class="img-wrapper" style="margin-right: 0px; margin-left: 0px;">
-                            <img class = "blur" src="assets/Graphic_Design/Gestalt_Principles/gestalt_closure.png" alt = "Gestalt Principles">
-                            <div class="content fade">Gestalt Principles</div>
-                        </div>
-                    </a>
-                    <a href="mcdonalds_rebrand.html">
-                        <div class="img-wrapper" style="margin-right: 0px; margin-left: 0px;">
-                            <img class = "blur" src="assets/Graphic_Design/McDonalds_Rebrand/mcdonalds_logo.png" alt = "McDonald's Rebrand">
-                            <div class="content fade">McDonald's Rebrand</div>
-                        </div>
-                    </a>
-                    <a href="saahd_icons.html">
-                        <div class="img-wrapper" style="margin-right: 0px; margin-left: 0px;">
-                            <img class = "blur" src="assets/Graphic_Design/SAAHD_Icons/art_education_icon.png" alt = "Icons for the School of Art, Art History, and Design">
-                            <div class="content fade">Icons for the School of Art, Art History, and Design</div>
-                        </div>
-                    </a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="card">
+                        <a href="mcdonalds_rebrand.html">
+                            <div class="img-wrapper">
+                                <img class = "blur" src="assets/Graphic_Design/McDonalds_Rebrand/mcdonalds_logo.png" alt = "McDonald's Rebrand">
+                                <div class="content fade">McDonald's Rebrand</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="saahd_icons.html">
+                            <div class="img-wrapper">
+                                <img class = "blur" src="assets/Graphic_Design/SAAHD_Icons/art_education_icon.png" alt = "Icons for the School of Art, Art History, and Design">
+                                <div class="content fade">Icons for the School of Art, Art History, and Design</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-md-4" style="padding-top: 10px;">
-                    <a href="color_theory.html">
-                        <div class="img-wrapper">
-                            <img class = "blur" src="assets/Graphic_Design/Color_Theory/bricks_primary_colors.png" alt = "Color Theory">
-                            <div class="content fade">Color Theory</div>
-                        </div>
-                    </a>
-                    <a href="onions_typography.html">
-                        <div class="img-wrapper">
-                            <img class = "blur" src="assets/Graphic_Design/Name_Type_Treatment/onions_complementary.png" alt = "Typographical Treatment">
-                            <div class="content fade">Typographical Treatment of Name</div>
-                        </div>
-                    </a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="card">
+                        <a href="onions_typography.html">
+                            <div class="img-wrapper">
+                                <img class = "blur" src="assets/Graphic_Design/Name_Type_Treatment/onions_complementary.png" alt = "Typographical Treatment">
+                                <div class="content fade">Typographical Treatment of Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="location_photo.html">
+                            <div class="img-wrapper">
+                                <img class = "blur" src="assets/Graphic_Design/Main_Street/main_street_good_tint.png" alt = "Highly Detailed Location Photo">
+                                <div class="content fade">Highly Detailed Location Photo</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
