@@ -17,21 +17,23 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 
-        <!-- My Scripts -->
+        <!-- My Scripts and Stylesheets -->
+        <script src="js/responsive_nav.js"></script>
         <link rel="stylesheet" href="base.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <!-- Menu -->
-    <div class="topnav">
-        <div class="links">
-            <a class = "link-item" href="index.html">Home</a>
-            <a class = "link-item" href="data_projects.html">Data Visualization</a>
-            <a class = "link-item" href="web_projects.html">Web Projects</a>
-            <!-- <a class = "link=item" href="banner_data_stats/bannerdatastats.html">Banner Data Stats</a> -->
-            <a class = "link-item active" href = "graphic_design.html">Graphic Design</a>
-            <a class = "link-item" href = "about_me.html">About Me</a>
-            <!-- <a class = "link-item" href = "coursedemand-full new data/demo-law6120/index.html">New Data</a> -->
-        </div>
+    <!-- Navbar at top of screen -->
+    <div class="topnav" id="nav_bar">
+        <a class = "link-item" href="index.html">Home</a>
+        <a class = "link-item" href="data_projects.html">Data Visualization</a>
+        <a class = "link-item" href="web_projects.html">Web Projects</a>
+        <a class = "link-item active" href = "graphic_design.html">Graphic Design</a>
+        <a class = "link-item" href = "about_me.html">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
     </div>
     
     <body>
@@ -75,5 +77,11 @@
             </div>
         </div>
     </body>
-</html>
+
+
+    <footer>
+        <h4>Contact Me:</h4>
+        <h5>(563) 271-339</h5>
+        <h5>meredith-onions@uiowa.edu</h5>
+    </footer>
 </html>

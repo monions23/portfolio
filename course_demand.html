@@ -16,21 +16,23 @@
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
-        <!-- My Scripts -->
+        <!-- My Scripts and Stylesheets -->
+        <script src="js/responsive_nav.js"></script>
         <link rel="stylesheet" href="base.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
-    <!-- Menu -->
-    <div class="topnav">
-        <div class="links">
-            <a class = "link-item" href="index.html">Home</a>
-            <a class = "link-item active" href="data_projects.html">Data Visualization</a>
-            <a class = "link-item" href="web_projects.html">Web Projects</a>
-            <!-- <a class = "link=item" href="banner_data_stats/bannerdatastats.html">Banner Data Stats</a> -->
-            <a class = "link-item" href = "graphic_design.html">Graphic Design</a>
-            <a class = "link-item" href = "about_me.html">About Me</a>
-            <!-- <a class = "link-item" href = "coursedemand-full new data/demo-law6120/index.html">New Data</a> -->
-        </div>
+    <!-- Navbar at top of screen -->
+    <div class="topnav" id="nav_bar">
+        <a class = "link-item" href="index.html">Home</a>
+        <a class = "link-item active" href="data_projects.html">Data Visualization</a>
+        <a class = "link-item" href="web_projects.html">Web Projects</a>
+        <a class = "link-item" href = "graphic_design.html">Graphic Design</a>
+        <a class = "link-item" href = "about_me.html">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
     </div>
 
     <body>
@@ -84,10 +86,7 @@
                         <ul>
                             <li>Helps answer the question: Do we need to change this class's current capacity?</li>
                         </ul>
-                        <li>Part of Leepfrog's main software product, CourseLeaf</li>
-                        <ul>
-                            <li>And within a module meant for college class/section scheduling</li>
-                        </ul>
+                        <li>Within a module (of Leepfrog's main software product, CourseLeaf) that's meant for college class/section scheduling</li>
                         <li>Allows for comparison of enrollment, waitlist, and open seats</li>
                         <ul>
                             <li>Plus key registration events such as maximum enrollment and maximum waitlist amounts</li>
@@ -119,60 +118,64 @@
 
             <hr>
 
-            <div class="container-large" style = "width: 95%; align-items: center; justify-content: center; margin-left: 50px; margin-top: 30px; margin-bottom: 30px;">
+            <div class="container-large" id="course-demand-visual-guide">
                 <div class="row gy-4 row-cols-1 row-cols-sm-1 rol-cols-md-2">
                     <h4 style="font-size: 16pt; text-align: center; margin-top: 30px; margin-bottom: 0px;"><strong>Visual Guide</strong></h4>
                     <div class="col-sm-12 col-md-6">
                         <h5 style="font-size: 14pt; text-align: center;"><strong>Ranges (Bars)</strong></h5>
+                        <div class="row gy-4 row-cols-1 row-cols-sm-1 rol-cols-md-2">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="square-div">
+                                    <div class="square-enrollment">
+                                    </div>
+                                    <p class="square-div-text">Enrollment</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="square-div">
+                                    <div class="square-open-seats">
+                                    </div>
+                                    <p class="square-div-text">Open Seats</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="square-div">
+                                    <div class="square-waitlist">
+                                    </div>
+                                    <p class="square-div-text">Waitlist</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <h5 style="font-size: 14pt; text-align: center;"><strong>Markers (Lines)</strong></h5>
+                        <div class="row gy-4 row-cols-1 row-cols-sm-1 rol-cols-md-2">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="square-div">
+                                    <div class="square-max-enrollment"></div>
+                                    <p class="square-div-text">Maximum Enrollment</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="square-div">
+                                    <div class="square-current-capacity"></div>
+                                    <p class="square-div-text">Current Capacity</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4x">
+                                <div class="square-div">
+                                    <div class="square-max-waitlist"></div>
+                                    <p class="square-div-text">Maximum Waitlist</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <div class="square-div">
-                                <div class="square-enrollment">
-                                </div>
-                                <p class="square-div-text">Enrollment</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <div class="square-div">
-                                <div class="square-open-seats">
-                                </div>
-                                <p class="square-div-text">Open Seats</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <div class="square-div">
-                                <div class="square-waitlist">
-                                </div>
-                                <p class="square-div-text">Waitlist</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <div class="square-div">
-                                <div class="square-max-enrollment"></div>
-                                <p class="square-div-text">Maximum Enrollment</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <div class="square-div">
-                                <div class="square-current-capacity"></div>
-                                <p class="square-div-text">Current Capacity</p>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
-                            <div class="square-div">
-                                <div class="square-max-waitlist"></div>
-                                <p class="square-div-text">Maximum Waitlist</p>
-                            </div>
-                        </div>
                 </div>
             </div>
 
             <!-- Must have could have should have-->
             <div class="row gy-4 row-cols-1 row-cols-sm-1 rol-cols-md-2" style="width: 95;">
-                <div class="col sm-12 col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card-light">
                         <h4 class="center_text" style="font-size: 16pt;"><strong>MUST HAVE</strong></h4>
                         <ul style="font-size: 13pt;">
@@ -188,7 +191,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col sm-12 col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card-light">
                         <h4 class="center_text" style="font-size: 16pt;"><strong>COULD HAVE</strong></h4>
                         <ul style="font-size: 13pt;">
@@ -200,7 +203,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col sm-12 col-md-4">
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card-light">
                         <h4 class="center_text" style="font-size: 16pt;"><strong>SHOULD HAVE</strong></h4>
                         <ul style="font-size: 13pt;">
@@ -279,36 +282,38 @@
             </div>
         </div>
 
-        <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-2" style="width: 95%;">
-            <div class="col-sm-12 col-med-12 col-lg-12">
-                <h3 class="problem-header">THE PROBLEM</h3>
-                <p class="disclaimer">Note: Stats generalized based on given dataset</p>
-            </div>
-            <div class="col-sm-12 col-med-4 col-lg-4">
-                <div class="problem-div">
-                    <h3 class="problem-stat">1000</h3>
-                    <p class="problem-subheader">HOURS IN REGISTRATION PERIOD</p>
+        <div class="part-container row gy-4 row-cols-1 row-cols-sm-1 rol-cols-md-2" style="align-content: center; justify-content: center; width: 95%;">
+            <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-2" style="width: 95%;">
+                <div class="col-sm-12 col-med-12 col-lg-12">
+                    <h3 class="problem-header">THE PROBLEM</h3>
+                    <p class="disclaimer">Note: Stats generalized based on given dataset</p>
+                </div>
+                <div class="col-sm-12 col-med-4 col-lg-4">
+                    <div class="problem-div">
+                        <h3 class="problem-stat">1000</h3>
+                        <p class="problem-subheader">HOURS IN REGISTRATION PERIOD</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-med-4 col-lg-4">
+                    <div class="problem-div">
+                        <h3 class="problem-stat">100</h3>
+                        <p class="problem-subheader">REGISTRATION EVENTS</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-med-4 col-lg-4">
+                    <div class="problem-div">
+                        <h3 class="problem-stat">2</h3>
+                        <p class="problem-subheader">KEY POINTS (MAX/MIN)</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-med-4 col-lg-4">
-                <div class="problem-div">
-                    <h3 class="problem-stat">100</h3>
-                    <p class="problem-subheader">REGISTRATION EVENTS</p>
+    
+            <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-2" style="width: 95%; align-content: center; justify-content: center; ">
+                <div class="col-sm-12 col-med-12 col-lg-12">
+                    <p class="prototype-problem">How to animate a 10-second animation accurately when the key frame <strong>must</strong> be the hour?</p>
+                    <p class="prototype-problem">Prototype's animation approach just wasn't cutting it: smooth on Edge/Chrome, but <strong>not</strong> on Firefox and not across machines.</p>
+                    <p class="prototype-problem">SetInterval's timing was subjective and inconsistent, and I was using it for both <strong>discrete</strong> data (the bar chart) and <strong>continuous</strong> data (the line chart) - a <strong>mistake</strong>.</p>
                 </div>
-            </div>
-            <div class="col-sm-12 col-med-4 col-lg-4">
-                <div class="problem-div">
-                    <h3 class="problem-stat">2</h3>
-                    <p class="problem-subheader">KEY POINTS (MAX/MIN)</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row gy-4 row-cols-1 row-cols-sm-1 row-cols-md-2" style="width: 95%;">
-            <div class="col-sm-12 col-med-12 col-lg-12">
-                <p class="prototype-problem">How to animate a 10-second animation accurately when the key frame <strong>must</strong> be the hour?</p>
-                <p class="prototype-problem">Prototype's animation approach just wasn't cutting it: smooth on Edge/Chrome, but <strong>not</strong> on Firefox and not across machines.</p>
-                <p class="prototype-problem">SetInterval's timing was subjective and inconsistent, and I was using it for both <strong>discrete</strong> data (the bar chart) and <strong>continuous</strong> data (the line chart) - a <strong>mistake</strong>.</p>
             </div>
         </div>
 
@@ -404,4 +409,11 @@
             </div>
         </div>
     </body>
+
+
+    <footer>
+        <h4>Contact Me:</h4>
+        <h5>(563) 271-339</h5>
+        <h5>meredith-onions@uiowa.edu</h5>
+    </footer>
 </html>

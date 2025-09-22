@@ -1,11 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 
 body {
-    margin-bottom: 60px;
     background-color: white;
     width: 100%;
+}
+
+.row {
+    width: 100%
 }
 
 .img-wrapper {
@@ -138,7 +145,10 @@ body {
   p {
       color: #213033;
       text-align: center;
+      align-items: center;
+      justify-content: center;
       font-family: 'Inter', 'Open Sans', sans-serif;
+      font-size: 13pt;
   }
   
   h1 {
@@ -218,12 +228,6 @@ body {
   
   .m-3 {
     margin: 1rem !important;
-  }
-
-  p {
-      color: #213033;
-      text-align: center;
-      font-family: 'Inter', 'Open Sans', sans-serif;
   }
   
   h1 {
@@ -315,14 +319,12 @@ body {
       font-size: 20px;
   }
   
-  .topnav .links {
-      display: flex;
-  }
   
   /* Change the color of links on hover */
   .topnav a:hover {
       background-color:#000000;
       color: #ffffff;
+      text-decoration: underline;
   }
   
   /* Add a color to the active/current link */
@@ -331,6 +333,10 @@ body {
       color: #ffffff;
       text-decoration: underline;
       /*border-bottom: 1px solid #dee2e6;*/
+  }
+
+  .topnav .icon {
+    display: none;
   }
   
   /* Listening rectangle - line chart tooltip */
@@ -361,17 +367,13 @@ body {
     border-radius: 0.5em;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
 
   .center_text {
     text-align: center;
   }
 
-  p {
-    font-size: 13pt;
-    padding: 0;
-    margin: 0;
-  }
 
 .card-dark {
     border-radius: 1em;
@@ -388,6 +390,7 @@ body {
     border-radius: 1em;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
     padding: 30px;
     background-color: #DEDEDE;
     -webkit-text-fill-color: black;
@@ -404,14 +407,17 @@ body {
     align-items: center;
     min-height: 500px;
     padding: 50px;
+    height: 60vh;
 }
 
 .square-div {
+    align-items: center; 
+    justify-content: center; 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    margin-top: 0px;
-    align-items: center;
+    margin-top: 30px;
     margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 .square-enrollment {
@@ -467,6 +473,7 @@ body {
     padding: 5px;
     font-size: 13pt;
     transform: translate(0px, 0px);
+    margin-bottom: 0;
 }
 
 .square-enrollment, .square-open-seats, .square-waitlist, .square-max-enrollment, 
@@ -579,5 +586,193 @@ body {
 }
 
 .prototype-problem {
+    align-items: center;
     margin-top: 10px;
+}
+
+.profile_wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110%;
+}
+
+.profile_pic {
+    display: block;
+    justify-self: center;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#about_me_decor {
+    background-color: #F8E4C4;    
+    align-items: center; 
+    justify-content: center; 
+    align-self: left;
+    justify-self: left;
+    height: 60%;
+    width: 97%;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    margin-right: 30vh;
+    position: absolute;
+    z-index: -5;
+}
+
+#project_decor {
+    background-color: #F8E4C4;
+    align-self: left;
+    justify-self: left;
+    height: 280%;
+    width: 99%;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    margin-right: 30vh;
+    position: absolute;
+    z-index: -5;
+    /* opacity: 0.5; */
+}
+
+#bio_decor {
+    background-color: #F8E4C4;
+    align-self: left;
+    justify-self: left;
+    height: 100%;
+    width: 99.8%;
+    margin-top: 5h;
+    margin-bottom: 20vh;
+    margin-right: 30vh;
+    position: absolute;
+    z-index: -5;
+}
+
+#project_heading {
+    margin-top: 35vh;
+}
+
+#course-demand-visual-guide {
+    width: 95%; 
+    margin-left: 30px; 
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20vh;
+    text-align: center;
+    background: black;
+    -webkit-text-fill-color: white;
+}
+
+/* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #project_decor {
+        width: 100%;
+        height: 375%;
+    }
+
+    #bio_decor {
+        height: 210%;
+    }
+
+    .profile_pic {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 60vh;
+        height: 60vh;
+    }
+}
+
+/* Media query for screens up to 768px wide (typical mobile breakpoint) */
+@media (min-width: 768px) and (max-width: 1000px) {
+    .profile_pic {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 60vh;
+        height: 60vh;
+    }
+
+    #course-demand-visual-guide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .square-div {
+        margin-left: 17vh;
+    }
+
+    .card-light {
+        height: 70vh;
+    }
+
+    #project_decor {
+        width: 100%;
+        height: 140%;
+    }
+
+    #bio_decor {
+        height: 150%;
+    }
+
+    #about_me_decor {
+        width: 100%;
+    }
+}
+
+/* For course demand */
+@media (min-width: 1000px) and (max-width: 1200px) {
+
+    #course-demand-visual-guide {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-light {
+        height: 90vh;
+    }
+
+    #project_decor {
+        width: 100%;
+        height: 210%;
+    }
+
+    #bio_decor {
+        height: 130%;
+    }
+}
+
+/* For cards */
+@media (min-width: 1000px) and (max-width: 1200px) {
+    .card-light {
+        height: 105vh;
+    }
+}
+
+/* For cards */
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .card-light {
+        height: 80vh;
+    }
 }
