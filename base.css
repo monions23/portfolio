@@ -547,37 +547,48 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     margin-top: 0px;
-    margin-left: 80px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
+    text-align: center;
 }
 
 .problem-header {
     margin-top: 50px;
     font-size: 40pt;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .problem-stat {
     text-align: center;
     font-size: 65px;
-    grid-column: 1 / 10;
+    grid-column: 2 / 10;
     margin-bottom: 130px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .problem-subheader {
     text-align: center;
     font-size: 12pt;
-    grid-column: 1 / 10;
+    grid-column: 2 / 10;
 }
 
 
 .problem-stat, .problem-subheader {
     grid-row: 1 / 2;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .disclaimer {
     font-size: 10pt;
     margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .stat-card {
@@ -590,7 +601,6 @@ body {
 }
 
 .prototype-problem {
-    align-items: center;
     margin-top: 10px;
 }
 
@@ -713,6 +723,7 @@ body {
     padding: 7px 10px;
     border: 1px solid #8AC7DB;
     background-color: #add8e6;
+    -webkit-text-fill-color: #014D4E;
 }
 
 .project-button:hover {
