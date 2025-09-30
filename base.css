@@ -720,6 +720,11 @@ body {
     background-color: #e89149;
 }
 
+.mission-statement {
+    text-align: center;
+    margin-top: 4vh;
+}
+
 footer {
     padding: 20px;
     margin-top: 20vh;
@@ -857,7 +862,7 @@ footer {
   }
 
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
         float: right;
@@ -888,8 +893,8 @@ footer {
     .profile_pic {
         margin-top: 15px;
         margin-bottom: 15px;
-        width: 60vh;
-        height: 60vh;
+        width: 30vh;
+        height: 30vh;
     }
 
     .project-title{
@@ -915,6 +920,10 @@ footer {
         margin: auto;
         margin-bottom: 10px;
     }
+
+    .mission-statement {
+        margin-top: 8vh;
+    }
 }
 
 /* Media query for screens up to 768px wide (typical mobile breakpoint) */
@@ -922,8 +931,8 @@ footer {
     .profile_pic {
         margin-top: 15px;
         margin-bottom: 15px;
-        width: 60vh;
-        height: 60vh;
+        width: 50vh;
+        height: 50vh;
     }
 
     #course-demand-visual-guide {
@@ -951,6 +960,10 @@ footer {
     #about_me_decor {
         width: 100%;
     }
+
+    .mission-statement {
+        margin-top: 26vh;
+    }
 }
 
 /* For course demand */
@@ -973,12 +986,18 @@ footer {
     #bio_decor {
         height: 130%;
     }
-}
 
-/* For cards */
-@media (min-width: 1000px) and (max-width: 1200px) {
+    .mission-statement {
+        margin-top: 12vh;
+    }
+
     .card-light {
         height: 105vh;
+    }
+
+    .profile_pic {
+        width: 65vh;
+        height: 65vh;
     }
 }
 
