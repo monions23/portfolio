@@ -880,9 +880,8 @@ footer {
         display: block;
     }
 
-    .topnav.responsive {position: relative;}
+    .topnav.responsive { position: sticky;}
     .topnav.responsive a.icon {
-        position: absolute;
         right: 0;
         top: 0;
     }
