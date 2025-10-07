@@ -357,7 +357,7 @@ body {
   }
 
   .card {
-    width: 97%;
+    width: 95%;
     border: 3px solid #7e7e7e;
     border-radius: 0.5em;
     align-items: center;
@@ -884,7 +884,7 @@ footer {
     }
 
     #bio_decor {
-        height: 230%;
+        height: 270%;
     }
 }
 
