@@ -884,13 +884,76 @@ footer {
     }
 
     #bio_decor {
-        height: 270%;
+        height: 300%;
+    }
+
+    .profile_pic {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive { position: sticky;}
+    .topnav.responsive a.icon {
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    #about_me_decor {
+        width: 104%;
+    }
+
+    .profile_pic {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .project-title{
+        text-align: center;
+        padding-left: 0;
+        font-size: 14pt;
+    }
+
+    .project-subtitle{
+        text-align: center;
+        padding-left: 0;
+        font-size: 11-t;
+    }
+
+    .button-container {
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        padding: auto;
+    }
+
+    .project-button {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .mission-statement {
+        margin-top: 8vh;
     }
 }
 
 
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media (max-width: 600px) {
+@media (min-width: 390px) and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
         float: right;
@@ -918,7 +981,7 @@ footer {
     }
 
     #bio_decor {
-        height: 195%;
+        height: 205%;
     }
 
     .profile_pic {
