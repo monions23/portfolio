@@ -872,6 +872,23 @@ footer {
     .prev, .next,.text {font-size: 11px}
   }
 
+/* For iPhone */
+@media (max-width: 390px) {
+    #about_me_decor {
+        width: 100%;
+    }
+
+    #project_decor {
+        width: 100%;
+        height: 500%;
+    }
+
+    #bio_decor {
+        height: 230%;
+    }
+}
+
+
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -891,13 +908,17 @@ footer {
         text-align: left;
     }
 
+    #about_me_decor {
+        width: 100%;
+    }
+
     #project_decor {
         width: 100%;
         height: 500%;
     }
 
     #bio_decor {
-        height: 210%;
+        height: 195%;
     }
 
     .profile_pic {
