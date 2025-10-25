@@ -394,7 +394,7 @@ body {
     border-radius: 1em;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: auto;
     padding: 30px;
     background-color: #DEDEDE;
     -webkit-text-fill-color: black;
@@ -488,8 +488,8 @@ body {
 .part-container {
     align-items: center;
     justify-content: center;
-    margin-left: 20px; 
-    margin-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .part {
@@ -497,7 +497,7 @@ body {
     justify-content: center;
     text-align: left;
     font-size: 30pt;
-    margin-left: 50px;
+    margin-left: auto;
 }
 
 .part-description {
@@ -505,7 +505,7 @@ body {
     justify-content: center;
     text-align: left;
     font-size: 22pt;
-    margin-left: 70px;
+    margin-left: auto;
     margin-top: 10px;
 }
 
@@ -514,7 +514,7 @@ body {
     justify-content: center;
     font-size: 12pt;
     text-align: left;
-    margin-left: 40px;
+    margin-left: auto;
     margin-top: 20px;
 }
 
