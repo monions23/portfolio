@@ -874,7 +874,7 @@ footer {
 /* For iPhone */
 @media (max-width: 400px) {
     #about_me_decor {
-        width: 100%;
+        width: 97%;
     }
 
     #project_decor {
@@ -910,10 +910,6 @@ footer {
         float: none;
         display: block;
         text-align: left;
-    }
-
-    #about_me_decor {
-        width: 104%;
     }
 
     .profile_pic {
