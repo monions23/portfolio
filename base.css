@@ -420,7 +420,8 @@ body {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     margin-top: 30px;
-    margin-left: 20px;
+    padding-left: 12vh;
+    padding-right: 12vh;
     margin-bottom: 30px;
 }
 
@@ -669,10 +670,6 @@ body {
     margin-top: 5vh;
 }
 
-#course-demand-visual-guide {
-    width: 95%;
-}
-
 .project {
     justify-self: right;
     align-self: right;
@@ -747,6 +744,8 @@ footer {
 
 .mySlides {
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .mySlidesStories {
