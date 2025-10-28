@@ -1,0 +1,209 @@
+#profile-intro {
+    text-align: left; 
+    padding-left: 40px; 
+    padding-top: 37vh;
+}
+
+#profile-description {
+    text-align: left; 
+    padding-bottom: 0px; 
+    padding-left: 95px;
+}
+
+.profile-wrapper {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110%;
+}
+
+.profile-pic {
+    display: block;
+    justify-self: center;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#container-center {
+    justify-content: center; 
+    align-items: center;
+}
+
+.heading.mission-statement {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.heading.specialties {
+    text-align: center; 
+    margin-top: 10vh;
+}
+
+.body.specialties-body {
+    text-align: center;
+}
+
+.heading.project-heading {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#padding-top-10 {
+    padding-top: 10px;
+}
+
+#video-100 {
+    width: 100%;
+}
+
+#row-100 {
+    width: 100%;
+}
+
+.project-title {
+    text-align: left;
+    font-size: 16pt;
+    padding-bottom: 0;
+    padding-top: 15pt;
+    padding-left: 10pt;
+    margin: 0;
+}
+
+.project-subtitle {
+    text-align: left;
+    font-size: 12pt;
+    padding-bottom: 0;
+    padding-left: 10pt;
+}
+
+/* EXTRA DECORATIONS */
+
+#about-me-decor {
+    background-color: #F8E4C4;    
+    align-items: center; 
+    justify-content: center; 
+    align-self: left;
+    justify-self: left;
+    height: 60%;
+    width: 97%;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    margin-right: 30vh;
+    position: absolute;
+    z-index: -5;
+}
+
+#project-decor {
+    background-color: #F8E4C4;
+    justify-self: center;
+    height: 280%;
+    width: 99%;
+    margin-top: 15vh;
+    margin-bottom: 20vh;
+    margin-right: 0;
+    position: absolute;
+    z-index: -5;
+    /* opacity: 0.5; */
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* SMARTPHONES */
+@media screen and ((max-width: 480px) or (max-height: 480px)) {
+    /* Same */
+    .heading {
+        font-size: 16pt;
+        padding: 0px 10px;
+    }
+
+    /* Same */
+    .body {
+        font-size: 14pt;
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+    #profile-intro {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 22vh;
+        font-size: 21pt;
+    }
+
+    #profile-description {
+        text-align: center;
+        padding: 5px 20px;
+        font-size: 14pt;
+    }
+
+    .profile-wrapper {
+        margin-top: 20px;
+    }
+
+    .profile-pic {
+        width: 35vh;
+        height: 35vh;
+    }
+
+    .project-title {
+        font-size: 14pt;
+    }
+
+    #about-me-decor {
+        width: 100%;
+    }
+
+    #project-decor {
+        width: 100%;
+        height: 440%;
+    }
+  }
+
+  @media screen and (max-height: 480px) and (orientation: landscape) {
+    #profile-intro {
+        text-align: center;
+        padding-left: 0;
+        padding-top: 24vh;
+        font-size: 24pt;
+    }
+
+    #profile-description {
+        text-align: center;
+        padding: 5px 20px;
+        font-size: 18pt;
+    }
+
+    .profile-wrapper {
+        margin-top: 20px;
+    }
+
+    .profile-pic {
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .project-title {
+        font-size: 14pt;
+    }
+
+    #about-me-decor {
+        width: 100%;
+        height: 80%;
+    }
+
+    #project-decor {
+        width: 100%;
+        height: 1425%;
+        margin-top: 20vh;
+    }
+  }
+  
+  
