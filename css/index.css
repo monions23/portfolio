@@ -104,7 +104,7 @@
     height: 325%;
     width: 99%;
     margin-top: 15vh;
-    margin-bottom: 20vh;
+    margin-bottom: 0;
     margin-right: 0;
     position: absolute;
     z-index: -5;
@@ -163,7 +163,7 @@
 
     #project-decor {
         width: 100%;
-        height: 440%;
+        margin-bottom: 0;
     }
   }
 
