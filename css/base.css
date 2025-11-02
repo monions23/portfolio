@@ -11,6 +11,16 @@ body {
     width: 100%;
 }
 
+.heading {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.body {
+    text-align: center;
+    font-size: 1.1em;
+}
+
 .img-wrapper {
     position: relative;
     overflow: hidden;
@@ -662,6 +672,7 @@ body {
 footer {
     padding: 20px;
     margin-top: 20vh;
+    bottom: 0;
     text-align: center;
     background: black;
     -webkit-text-fill-color: white;
