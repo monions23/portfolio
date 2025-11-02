@@ -149,6 +149,7 @@
     }
 
     .profile-pic {
+        justify-self: center;
         width: 35vh;
         height: 35vh;
     }
