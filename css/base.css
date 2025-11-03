@@ -179,7 +179,7 @@ body {
     border-radius: 0.5em;
     align-items: center;
     justify-content: center;
-    padding: 15px;
+    padding: 8px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
@@ -230,6 +230,22 @@ body {
     min-height: 500px;
     padding: 50px;
     height: 60vh;
+}
+
+.project-title {
+    text-align: left;
+    font-size: 16pt;
+    padding-bottom: 0;
+    padding-top: 15pt;
+    padding-left: 10pt;
+    margin: 0;
+}
+
+.project-subtitle {
+    text-align: left;
+    font-size: 12pt;
+    padding-bottom: 0;
+    padding-left: 10pt;
 }
 
 /* Course demand squares */

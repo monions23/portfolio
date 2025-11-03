@@ -62,22 +62,6 @@
     width: 100%;
 }
 
-.project-title {
-    text-align: left;
-    font-size: 16pt;
-    padding-bottom: 0;
-    padding-top: 15pt;
-    padding-left: 10pt;
-    margin: 0;
-}
-
-.project-subtitle {
-    text-align: left;
-    font-size: 12pt;
-    padding-bottom: 0;
-    padding-left: 10pt;
-}
-
 /* Floating banner */
 #about-me-decor {
     background-color: #F8E4C4;    
