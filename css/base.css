@@ -11,6 +11,7 @@ body {
     width: 100%;
 }
 
+/* Text classes */
 .heading {
     text-align: center;
     font-size: 1.4em;
@@ -21,6 +22,8 @@ body {
     font-size: 1.1em;
 }
 
+
+/* Image styling */
 .img-wrapper {
     position: relative;
     overflow: hidden;
@@ -62,6 +65,9 @@ body {
     opacity: 1;
 }
 
+
+
+/* Video styling */
 .video {
     display: block;
     transform: translate(-50%, -50%);
@@ -112,191 +118,9 @@ body {
 .video-wrapper:hover > .vidcontent.fade {
     opacity: 1;
 }
-
-/**
-.carousel-dark .carousel-control-prev-icon {
-  background-image: url("xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512' fill='%23000' d='M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z");
-}
-
-.carousel-dark .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fa3de3' %3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.carousel-dark .carousel-control-prev-icon,
-.carousel-dark .carousel-control-next-icon {
-    margin-left: -7%;
-    margin-right: -7%;
-}
-*/
-
-
-.svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-    overflow: visible;
-  }
-  .svg-content-responsive {
-    margin-bottom: 1em;
-  }
   
-  .m-3 {
-    margin: 1rem !important;
-  }
-  
-  p {
-      color: #213033;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Inter', 'Open Sans', sans-serif;
-      font-size: 13pt;
-  }
-  
-  h1 {
-      color: black;
-      margin-top: 10px;
-  }
-  
-  cite {
-      color: #213033;
-      padding: 10px;
-      margin: 10px;
-  }
-  
-  .d3_fruit_1 {
-      color: #213033;
-      padding: 10px;
-      margin: 10px;
-  }
-  
-  .tooltip {
-      visibility: hidden;
-      pointer-events: none;
-      opacity: 0;
-      position: absolute;
-      font-family: 'Inter', 'Open Sans', sans-serif;
-      font-weight: bold;
-      font-size: 15px;
-      padding: 8px;
-      color: #004ea0;
-      background-color: #ffffff;
-      border: 1px solid #004ea0;
-      border-radius: 12px;
-  }
-  
-  .button {
-      background-color: #fafbfa;
-      border: 1px solid #004ea0;
-      padding: 12px;
-      border-radius: 4px;
-      color: #004ea0;
-      font-family: 'Inter', 'Open Sans', sans-serif;
-      text-align: center;
-      display: inline-block;
-      font-size: 18px;
-      margin-top: 0px;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-  }
-  
-  .button:hover {
-      background-color: #004ea0;
-      padding: 12px;
-      border: 1 px solid #004ea0;
-      color: #fafbfa
-  }
-  
-  /*
-  .button:active {
-      background-color: #3f5831;
-      border: 12px solid #3f5831;
-      color: #fafbfa
-  }
-  */
-  
-  .svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-    overflow: visible;
-  }
-  .svg-content-responsive {
-    margin-bottom: 1em;
-  }
-  
-  .m-3 {
-    margin: 1rem !important;
-  }
-  
-  h1 {
-      color: #213033;
-  }
-  
-  cite {
-      color: #213033;
-      padding: 10px;
-      margin: 10px;
-  }
-  
-  .d3_fruit_1 {
-      color: #213033;
-      padding: 10px;
-      margin: 10px;
-  }
-  
-  .tooltip {
-      visibility: hidden;
-      pointer-events: none;
-      opacity: 0;
-      position: absolute;
-      font-family: 'Inter', 'Open Sans', sans-serif;
-      font-weight: bold;
-      font-size: 15px;
-      padding: 8px;
-      color: #004ea0;
-      background-color: #ffffff;
-      border: 1px solid #004ea0;
-      border-radius: 12px;
-  }
-  
-  .button {
-      background-color: #fafbfa;
-      border: 1px solid #004ea0;
-      padding: 12px;
-      border-radius: 4px;
-      color: #004ea0;
-      font-family: 'Inter', 'Open Sans', sans-serif;
-      text-align: center;
-      display: inline-block;
-      font-size: 18px;
-      margin-top: 0px;
-      margin-left: 10px;
-      margin-right: 10px;
-      margin-bottom: 10px;
-  }
-  
-  .button:hover {
-      background-color: #004ea0;
-      padding: 12px;
-      border: 1 px solid #004ea0;
-      color: #fafbfa
-  }
-  
-  /*
-  .button:active {
-      background-color: #3f5831;
-      border: 12px solid #3f5831;
-      color: #fafbfa
-  }
-  */
-  
-  .topnav {
+/* Navigation bar */
+.topnav {
       /* margin: 0px 0px;
       padding: 0px; */
       position: sticky;
@@ -310,63 +134,46 @@ body {
       /* border-radius: 0px; */
   }
   
-  /* Original CSS: https://www.w3schools.com/howto/howto_js_topnav.asp */
-  .topnav a{
-      float: left;
-      background-color: #000000;
-      color: #ffffff;
-      text-align: center;
-      align-items: center;
-      padding: 14px 16px;
-      font-family: 'Inter', 'Open Sans', sans-serif;
-      text-decoration: none;
-      font-size: 20px;
-  }
+/* Original CSS: https://www.w3schools.com/howto/howto_js_topnav.asp */
+.topnav a{
+    float: left;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    padding: 14px 16px;
+    font-family: 'Inter', 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
   
   
-  /* Change the color of links on hover */
-  .topnav a:hover {
-      background-color:#000000;
-      color: #ffffff;
-      text-decoration: underline;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-      background-color: #000000;
-      color: #ffffff;
-      text-decoration: underline;
-      /*border-bottom: 1px solid #dee2e6;*/
-  }
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color:#000000;
+    color: #ffffff;
+    text-decoration: underline;
+}
 
-  .topnav .icon {
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: underline;
+    /*border-bottom: 1px solid #dee2e6;*/
+}
+
+.topnav .icon {
     display: none;
-  }
+}
   
-  /* Listening rectangle - line chart tooltip */
-  .listening_rect {
-      pointer-events: all;
-      fill-opacity: 0;
-      stroke-opacity: 0;
-      z-index: 1;
-  }
+/* Cards */
   
-  .tooltip_lr {
-      position: absolute;
-      padding: 10px;
-      background-color: #ffffff;
-      color: #004ea0;
-      border: 1px solid #004ea0;
-      border-radius: 20px;
-      display: none;
-      opacity: 0.75;
-  }
-  
-  #wrapper_card {
-      margin-bottom: 10px;
-  }
+#wrapper_card {
+    margin-bottom: 10px;
+}
 
-  .card {
+.card {
     width: 95%;
     border: 3px solid #7e7e7e;
     border-radius: 0.5em;
@@ -377,16 +184,16 @@ body {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  .card-body {
+.card-body {
     margin: 0;
     padding: 5px;
-  }
+}
 
-  .center_text {
+.center_text {
     text-align: center;
-  }
+}
 
 
 .card-dark {
@@ -410,6 +217,7 @@ body {
     -webkit-text-fill-color: black;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .card-light {
@@ -424,6 +232,7 @@ body {
     height: 60vh;
 }
 
+/* Course demand squares */
 .square-div {
     align-items: center; 
     justify-content: center; 
@@ -496,6 +305,7 @@ body {
     grid-row: 1 / 2;
 }
 
+/* Course demand text parts */
 .part-container {
     align-items: center;
     justify-content: center;
@@ -669,16 +479,8 @@ body {
     background-color: #e89149;
 }
 
-footer {
-    padding: 20px;
-    margin-top: 20vh;
-    bottom: 0;
-    text-align: center;
-    background: black;
-    -webkit-text-fill-color: white;
-}
 
-/* Hide the images by default */
+/* Carousel */
 
 .mySlides {
     display: none;
@@ -802,6 +604,17 @@ footer {
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+/* Footer */
+  footer {
+    padding: 20px;
+    margin-top: 20vh;
+    bottom: 0;
+    text-align: center;
+    background: black;
+    -webkit-text-fill-color: white;
+    }
+
   
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
@@ -953,10 +766,6 @@ footer {
     .project-button {
         margin: auto;
         margin-bottom: 10px;
-    }
-
-    .mission-statement {
-        margin-top: 8vh;
     }
 }
 
