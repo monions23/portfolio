@@ -11,7 +11,7 @@
 }
 
 .profile-wrapper {
-    margin-top: 30px;
+    margin-top: 8vh;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
@@ -22,8 +22,8 @@
 .profile-pic {
     display: block;
     justify-self: center;
-    width: 80vh;
-    height: 80vh;
+    width: 75vh;
+    height: 75vh;
     border-radius: 50%;
     object-fit: cover;
     margin: 20px;
@@ -183,7 +183,7 @@
 
 /* SMALL TABLETS  */
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
     #header-column {
         padding-left: 0px;
     }
@@ -206,8 +206,8 @@
     }
 
     .profile-pic {
-        width: 40vh;
-        height: 40vh;
+        width: 36vh;
+        height: 36vh;
     }
 
     .heading.mission-statement {
@@ -221,6 +221,7 @@
     #about-me-decor {
         width: 100%;
         margin-top: 5vh;
+        height: 55%;
     }
 
     #project-decor {
@@ -228,7 +229,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
     #header-column {
         padding-left: 0px;
     }
@@ -266,65 +267,29 @@
 
     #about-me-decor {
         margin-top: 11vh;
-        height: 42%;
+        height: 80%;
         width: 100%;
     }
 }
 
 /* SMALL SCREENS AND LAPTOPS */
 
-/* @media screen and (min-width: 1025px) and (max-width: 1200) and (orientation: portrait) {
+@media screen and (min-width: 992px) and (max-width: 1200px) and (orientation: portrait) {
     #profile-intro {
-        text-align: center;
+        text-align: left;
         padding-left: 0;
-        padding-top: 22vh;
+        padding-top: 19vh;
         font-size: 21pt;
     }
 
     #profile-description {
-        text-align: center;
+        text-align: left;
         padding: 5px 20px;
         font-size: 14pt;
     }
 
     .profile-wrapper {
-        margin-top: 20px;
-    }
-
-    .profile-pic {
-        width: 40vh;
-        height: 40vh;
-    }
-
-    .heading.mission-statement, .heading.specialties, .body.specialties-body {
-        padding: 0em 2em;
-    }
-
-    #about-me-decor {
-        width: 100%;
-    }
-
-    #project-decor {
-        margin-top: 10vh;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1200px) and (orientation: landscape) {
-    #profile-intro {
-        text-align: center;
-        padding-left: 0;
-        padding-top: 24vh;
-        font-size: 24pt;
-    }
-
-    #profile-description {
-        text-align: center;
-        padding: 5px 20px;
-        font-size: 18pt;
-    }
-
-    .profile-wrapper {
-        margin-top: 20px;
+        margin-top: 6vh;
     }
 
     .profile-pic {
@@ -332,13 +297,56 @@
         height: 35vh;
     }
 
+    .heading.mission-statement, .heading.specialties, .body.specialties-body {
+        padding: 0em 2em;
+    }
+
+    #about-me-decor {
+        margin-top: 8vh;
+        width: 100%;
+        height: 30%;
+    }
+
+    #project-decor {
+        margin-top: 8vh;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) and (orientation: landscape) {
+    #profile-intro {
+        text-align: left;
+        padding-left: 0;
+        padding-top: 26vh;
+        font-size: 24pt;
+    }
+
+    #profile-description {
+        text-align: left;
+        padding: 5px 20px;
+        font-size: 18pt;
+    }
+
+    .profile-wrapper {
+        margin-top: 6vh;
+    }
+
+    .profile-pic {
+        width: 70vh;
+        height: 70vh;
+    }
+
+    .heading.mission-statement {
+        margin-top: 8vh;
+    }
+
     .project-title {
         font-size: 14pt;
     }
 
     #about-me-decor {
+        margin-top: 9vh;
         width: 100%;
-        height: 80%;
+        height: 63%;
     }
 }
-   */
+  
