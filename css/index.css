@@ -1,7 +1,7 @@
 #profile-intro {
     text-align: left; 
     padding-left: 40px; 
-    padding-top: 32vh;
+    padding-top: 30vh;
 }
 
 #profile-description {
@@ -22,8 +22,8 @@
 .profile-pic {
     display: block;
     justify-self: center;
-    width: 70vh;
-    height: 70vh;
+    width: 65vh;
+    height: 65vh;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -35,7 +35,7 @@
 }
 
 .heading.mission-statement {
-    margin-top: 10vh;
+    margin-top: 12vh;
 }
 
 .heading.specialties {
@@ -69,7 +69,7 @@
     justify-content: center; 
     align-self: left;
     justify-self: left;
-    height: 62%;
+    height: 55%;
     width: 98%;
     margin-top: 10vh;
     margin-bottom: 20vh;
@@ -84,7 +84,7 @@
     justify-self: center;
     height: 100%;
     width: 99%;
-    margin-top: 15vh;
+    margin-top: 14vh;
     padding-bottom: 15px;
     margin-bottom: 0;
     margin-right: 0;
@@ -124,7 +124,7 @@
     }
 
     .heading.mission-statement {
-        margin-top: 15vh;
+        margin-top: 8vh;
         padding: 0px 30px;
     }
 
@@ -134,11 +134,11 @@
 
     #about-me-decor {
         width: 100%;
-        height: 65%;
+        height: 52%;
     }
 
     #project-decor {
-        margin-top: 8vh;
+        margin-top: 10vh;
     }
   }
 
@@ -214,7 +214,7 @@
     }
 
     .heading.mission-statement {
-        margin-top: 10vh;
+        margin-top: 6vh;
     }
 
     .heading.mission-statement, .heading.specialties, .body.specialties-body {
@@ -224,7 +224,7 @@
     #about-me-decor {
         width: 100%;
         margin-top: 5vh;
-        height: 50%;
+        height: 45%;
     }
 
     #project-decor {
@@ -344,7 +344,7 @@
     }
 
     .heading.mission-statement {
-        margin-top: 12vh;
+        margin-top: 13vh;
     }
 
     .project-title {
