@@ -165,8 +165,8 @@
     } */
 
     .profile-pic {
-        width: 70vh;
-        height: 70vh;
+        width: 60vh;
+        height: 60vh;
     }
 
     .project-title {
@@ -255,13 +255,13 @@
     } */
 
     .profile-pic {
-        width: 70vh;
-        height: 70vh;
+        width: 60vh;
+        height: 60vh;
         margin-bottom: 20px;
     }
 
     .heading.mission-statement {
-        margin-top: 20vh;
+        margin-top: 10vh;
     }
 
     .project-title {
@@ -270,8 +270,12 @@
 
     #about-me-decor {
         margin-top: 11vh;
-        height: 90%;
+        height: 80%;
         width: 100%;
+    }
+
+    #project-decor {
+        margin-top: 18vh;
     }
 }
 
@@ -301,7 +305,7 @@
     }
 
     .heading.mission-statement {
-        margin-top: 8vh;
+        margin-top: 6vh;
     }
 
     .heading.mission-statement, .heading.specialties, .body.specialties-body {
@@ -339,8 +343,8 @@
 
     .profile-pic {
         margin-top: 2vh;
-        width: 66vh;
-        height: 66vh;
+        width: 65vh;
+        height: 65vh;
     }
 
     .heading.mission-statement {
