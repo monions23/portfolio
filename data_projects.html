@@ -26,7 +26,7 @@
         <a class = "link-item" href="web_projects.html">Web Projects</a>
         <a class = "link-item" href = "graphic_design.html">Graphic Design</a>
         <a class = "link-item" href = "about_me.html">About Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="editResponsiveClass()">
             <i class="fa fa-bars"></i>
             </a>
     </div>
@@ -35,118 +35,82 @@
     <body>
         <!-- Display of graphic design projects - clickable images that take user to corresponding project page -->
         <div class="container-large mx-auto" style="width: 95%;">
-            <div class="row g-0 row-cols-1 row-col-sm-2 row-cols-md-6">
-                <div class="col-xs-12 col-md-12 col-lg-12 mx-auto" style="width: 97%;">
-                    <div class="card">
-                        <div class="card-body p-0">
-                            <div class="video-wrapper">
-                                <video autoplay loop muted defaultMuted playsinline>
-                                    <source src="assets/Data_Work/Course_Demand/reg_anim_display_video.mp4" style="width: 100%;">
+            <div class="grid-container">
+
+                <div class="card width-full">
+                    <div class="card-body-grid p-0">
+                        <div class="video-wrapper">
+                                <video autoplay muted playsinline>
+                                    <source id="video-100" src="assets/Data_Work/Course_Demand/reg_anim_demo.mp4">
                                 </video>
-                            </div>
-                            <div class="row g-0" style="width: 100%;">
-                                <div class="col-xs-12 col-md-9">
-                                    <p class="project-title">Leepfrog Technologies Course Registration Project</p>
-                                    <p class="project-subtitle">Designing an Animation and Implementing Interactive Features</p>
-                                </div>
-                                <div class="col-xs-12 col-md-3" style="padding: 0;">
-                                    <div class="button-container">
-                                        <a class="project-link" href="course_demand.html">
-                                            <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                        <p class="project-title">Leepfrog Technologies Course Demand Project</p>
+                        <p class="project-subtitle">Designing an Animation and Implementing Interactive Features</p>
+                        <div class="button-container">
+                            <a class="project-link" href="course_demand.html">
+                                <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row g-0 row-cols-1 row-col-sm-2 row-cols-md-6">
-                <div class="col-xs-12 col-md-6 mx-auto">
-                    <div class="card">
-                        <div class="card-body p-0">
-                            <div class="img-wrapper">
-                                <img src="assets/Data_Work/Analyzing_Info/total_births.png" alt = "SSA Total Births Data">
-                            </div>
 
-                            <div class="row g-0" style="width: 100%;">
-                                <div class="col-xs-12 col-md-9">
-                                    <p class="project-title">Visualizations of SSA Data</p>
-                                    <p class="project-subtitle">Utilizing Various Graphing Techniques with Matplotlib and pandas</p>
-                                </div>
-                                <div class="col-xs-12 col-md-3" style="padding: 0;">
-                                    <div class="button-container">
-                                        <a class="project-link" href="ssa_data.html">
-                                            <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <!-- Other Cards -->
+                <div class="card">
+                    <div class="card-body-grid p-0">
+                        <div class="img-wrapper">
+                            <img src="assets/Data_Work/Analyzing_Info/total_births.png" alt = "SSA Total Births Data">
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-body p-0">
-                            <div class="img-wrapper">
-                                <img src="assets/Data_Work/Analyzing_Info/box_plot_no_outliers.png" alt = "Student Gender vs Income No Outliers">
-                            </div>
-
-                            <div class="row g-0" style="width: 100%;">
-                                <div class="col-xs-12 col-md-9">
-                                    <p class="project-title">Removal of Outliers with Seaborn</p>
-                                    <p class="project-subtitle">Lessons in Data Cleansing</p>
-                                </div>
-                                <div class="col-xs-12 col-md-3" style="padding: 0;">
-                                    <div class="button-container">
-                                        <a class="project-link" href="removing_outliers.html">
-                                            <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <p class="project-title">Visualizations of SSA Data</p>
+                        <p class="project-subtitle">Utilizing Various Graphing Techniques with Matplotlib and pandas</p>
+                        <div class="button-container">
+                            <a class="project-link" href="ssa_data.html">
+                                <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
-                    <div class="card">
-                        <div class="card-body p-0">
-                            <div class="img-wrapper">
-                                <img src="assets/Data_Work/GIS/bigfoot_sightings.jpg" alt = "Bigfoot Sightings Map" style="width: 97%;">
-                            </div>
 
-                            <div class="row g-0" style="width: 100%;">
-                                <div class="col-xs-12 col-md-9">
-                                    <p class="project-title">Map of Bigfoot Sightings in the United States</p>
-                                    <p class="project-subtitle">Effectively Visualizing Spatial Data in ArcGis Pro</p>
-                                </div>
-                                <div class="col-xs-12 col-md-3" style="padding: 0;">
-                                    <div class="button-container">
-                                        <a class="project-link" href="bigfoot_sightings.html">
-                                            <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="card">
+                    <div class="card-body-grid p-0">
+                        <div class="img-wrapper">
+                            <img src="assets/Data_Work/Analyzing_Info/box_plot_no_outliers.png" alt = "Student Gender vs Income No Outliers">
+                        </div>
+                        <p class="project-title">Removal of Outliers with Seaborn</p>
+                        <p class="project-subtitle">Lessons in Data Cleansing</p>
+                        <div class="button-container">
+                            <a class="project-link" href="removing_outliers.html">
+                                <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
+                            </a>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card-body"></div>
-                            <div class="img-wrapper">
-                                <img src="assets/Data_Work/Stats/stats_project_one_regression_line.png" alt = "Usability vs Trust Excel Chart">
-                            </div>
+                </div>
 
-                            <div class="row g-0" style="width: 100%;">
-                                <div class="col-xs-12 col-md-9">
-                                    <p class="project-title">Analysis of Usability of Technology vs User Trust</p>
-                                    <p class="project-subtitle">Conducting a Survey and Reviewing Results in Microsoft Excel</p>
-                                </div>
-                                <div class="col-xs-12 col-md-3" style="padding: 0;">
-                                    <div class="button-container">
-                                        <a class="project-link" href="bigfoot_sightings.html">
-                                            <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="card">
+                    <div class="card-body-grid p-0">
+                        <div class="img-wrapper">
+                            <img src="assets/Data_Work/GIS/bigfoot_sightings.jpg" alt = "Bigfoot Sightings Map" id="video-100">
+                        </div>
+                        <p class="project-title">Map of Bigfoot Sightings in the United States</p>
+                        <p class="project-subtitle">Effectively Visualizing Spatial Data in ArcGIS Pro</p>
+                        <div class="button-container">
+                            <a class="project-link" href="bigfoot_sightings.html">
+                                <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body-grid p-0">
+                        <div class="img-wrapper">
+                            <img src="assets/Data_Work/Stats/stats_project_one_regression_line.png" alt = "Usability vs Trust Excel Chart">
+                        </div>
+                        <p class="project-title">Analysis of Usability of Technology vs User Trust</p>
+                        <p class="project-subtitle">Conducting a Survey and Reviewing Results in Microsoft Excel</p>
+                        <div class="button-container">
+                            <a class="project-link" href="usability_vs_trust.html">
+                                <button class="project-button">Learn More  <i class="fa fa-arrow-right"></i></button>
+                            </a>
                         </div>
                     </div>
                 </div>
