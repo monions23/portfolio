@@ -750,7 +750,9 @@ body {
     }
 
     .card-light {
-        height: 90vh;
+        min-height: 80%;
+        height: auto;
+        align-content: center;
     }
     
     #bio_decor {
