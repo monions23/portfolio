@@ -26,6 +26,10 @@ p {
     font-size: 13pt;
 }
 
+.content-section {
+    padding: 0px 30px;
+}
+
 /* Image styling */
 .img-wrapper {
     position: relative;
@@ -123,6 +127,16 @@ p {
 }
 .video-wrapper:hover > .vidcontent.fade {
     opacity: 1;
+}
+
+.intro-video {
+    grid-column: 1 / 13;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
   
 /* Navigation bar */
@@ -274,6 +288,40 @@ p {
     padding: 50px;
 }
 
+/* Cards and Information */
+.card-light {
+
+    /* Project Details Cards */
+    &.my-contributions {
+        grid-column: 7 / 13;
+    }
+
+    &.project-background {
+        grid-column: 1 / 7;
+    }
+
+
+    /* Must have could have should have cards */
+    &.must-have {
+        grid-column: 1 / 5;
+    }
+
+    &.could-have {
+        grid-column: 5 / 9;
+    }
+
+    &.should-have {
+        grid-column: 9 / 13;
+    }
+
+}
+
+.card-lg.what-i-learned {
+    grid-column: 1 / 13;
+    width: 100%;
+    margin-top: 20px;
+}
+
 .project-title {
     text-align: left;
     font-size: 16pt;
@@ -292,6 +340,76 @@ p {
     padding-left: 10pt;
     grid-column: span 9;
     grid-row: 3 / 4;
+}
+
+/* Containers for project details */
+
+.part-left {
+    grid-column: 1 / 5;
+    place-self: center;
+    width: 100%;
+}
+
+.video-right {
+    grid-column: 5 / 13;
+    border: 1px solid #7f7e7e;
+    border-radius: 1%;
+    object-fit: fill;
+    height: auto;
+    width: 100%;
+    align-self: center;
+}
+
+.image-left-half {
+    grid-column: 1 / 7;
+    border: 1px solid #7f7e7e;
+    border-radius: 1%;
+    width: 100%;
+}
+
+.image-right-half {
+    grid-column: 7 / 13;
+    border: 1px solid #7f7e7e;
+    border-radius: 1%;
+    width: 100%;
+}
+
+.image-right {
+    grid-column: 5 / 13;
+    border: 1px solid #7f7e7e;
+    border-radius: 1%;
+    width: 100%;
+}
+
+.carousel-right {
+    grid-column: 5 / 13;
+    object-fit: fill;
+    height: auto;
+    width: 100%;
+    align-self: center;
+}
+
+/* Text for each part */
+.part-label {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 30pt;
+}
+
+.part-description {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 22pt;
+}
+
+.part-list {
+    align-items: center;
+    justify-content: center;
+    font-size: 12pt;
+    text-align: left;
+    margin-top: 20px;
 }
 
 .stat-card {
@@ -501,6 +619,13 @@ p {
     .prev, .next,.text {font-size: 11px}
 }
 
+
+@media (max-width: 452px) {
+    .content-section {
+        padding: 0px 10px;
+    }
+}
+
 /* For iPhone */
 @media screen and (max-width: 870px) {
 
@@ -571,12 +696,63 @@ p {
     }
 
     .card-light {
+        padding: 30px;
         align-content: center;
+
+        &.project-background, &.my-contributions {
+            grid-column: 1 / 13;
+            margin: 10px 0px;
+        }
+
+        &.must-have, &.could-have, &.should-have {
+            grid-column: 1 / 13;
+        }
+    }
+
+    .intro-video {
+        padding-left: 0px;
+        padding-right: 0px;
     }
     
     #bio_decor {
         /* height: 220%; */
         display: none;
+    }
+}
+
+@media (max-width: 1020px) {
+    .part-left {
+        grid-column: 1 / 13;
+    }
+
+    .video-right {
+        grid-column: 1 / 13;
+    }
+
+    .image-right {
+        grid-column: 1 / 13;
+    }
+
+    .image-left-half {
+        grid-column: 1 / 13;
+    }
+
+    .image-right-half {
+        grid-column: 1 / 13;
+    }
+
+    .part-label {
+        text-align: center;
+    }
+
+    .part-description {
+        text-align: center;
+    }
+
+    .part-list {
+        align-self: center;
+        justify-self: center;
+        text-align: left;
     }
 }
 
