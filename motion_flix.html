@@ -43,263 +43,265 @@
         <h5 class="project-pg-subtitle">HTML | JavaScript | CSS | Figma | Balsamiq Wireframes</h5>
 
 
-        <!-- Carousel of images alongside project description -->
-        <div class="container-large mx-auto">
-            <div class="intro-video">
-                <video class="moflix-demo" autoplay loop muted defaultMuted playsinline width="100%" height="100%">
+        <div class="content-section">
+            <!-- Intro video -->
+            <!-- Note: IDs are for full screen functionality-->
+            <div class="intro-video" id="project-video-container">
+                <video class="moflix-demo" id="project-video" autoplay loop muted defaultMuted playsinline width="100%" height="100%">
                     <source src="assets/Web_Projects/MotionFlix/browsing_demo (1).mp4" style="width: 99%;">
                 </video>
+                 <div class="controls"> 
+                    <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
+                </div>
             </div>
 
-            <div class="content-section">
-                <div class="grid-container">
-                    <div class="card-light project-background">
-                        <h4 class="container-heading">Project Description</h4>
+            <div class="grid-container">
+                <div class="card-light project-background">
+                    <h4 class="container-heading">Project Description</h4>
+                    <ul>
+                        <li>Final project for CS:2500 in Spring 2024</li>
+                        <li>Basis: a dataset of the top 1000 movies on IMDb</li>
+                        <li>Local website developed with two other classmates</li>
+                        <li>General concept: movie education</li>
                         <ul>
-                            <li>Final project for CS:2500 in Spring 2024</li>
-                            <li>Basis: a dataset of the top 1000 movies on IMDb</li>
-                            <li>Local website developed with two other classmates</li>
-                            <li>General concept: movie education</li>
-                            <ul>
-                                <li>Can test and expand current movie knowledge</li>
-                            </ul>
-                            <li>What we did:</li>
-                            <ul>
-                                <li>Usability testing, interviewed stakeholders</li>
-                                <li>Created low-fidelity prototypes</li>
-                                <li>Programmed our website from scratch</li>
-                            </ul>
+                            <li>Can test and expand current movie knowledge</li>
                         </ul>
-                    </div>
-                    <div class="card-light my-contributions">
-                        <h4 class="container-heading">My contributions</h4>
+                        <li>What we did:</li>
                         <ul>
-                            <li>Kept group organized and maintained effective documentation through each project phase</li>
-                            <li>Browsing Page</li>
-                            <ul>
-                                <li>Wrote JavaScript functions to read the dataset and filter it (genre, IMDb rating, search bar)</li>
-                                <li>Displayed filtered data with HTML and Bootstrap</li>
-                            </ul>
-                            <li>Trivia Page</li>
-                            <ul>
-                                <li>Implemented: General easy, medium, hard levels</li>
-                                <ul>
-                                    <li>Movie-themed questions I wrote myself</li>
-                                </ul>
-                            </ul>
+                            <li>Usability testing, interviewed stakeholders</li>
+                            <li>Created low-fidelity prototypes</li>
+                            <li>Programmed our website from scratch</li>
                         </ul>
-                    </div>
-
-                    <!-- What I learned -->
-                    <div class="card-lg what-i-learned">
-                        <h4 class="container-heading">What I Learned:</h4>
-                        <p>How to create user stories and perform competitive assessments.</p>
-                        <p>How to design low-fidelity wireframes.</p>
-                        <p>How to implement a high-functioning prototype.</p>
-                        <p>And finally - how to utilize user testing to inform future phases of a project.</p>
-                    </div>
-
-                    <!-- PART 1: USER PERSONAS AND REQUIREMENTS -->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 1: </h4>
-                        <h4 class="part-description">USER PERSONAS AND REQUIREMENTS</h4>
-                        <ul class="part-list">
-                            <li>Brainstorming an application related to film</li>
-                            <li>Identifying potential target users</li>
-                            <li>Conducting interviews with said users to establish requirements</li>
-                            <li>Creating user personas</li>
-                            <ul>
-                                <li>Based on the individuals we interviewed</li>
-                            </ul>
-                            <li>Completing a competitive assessment with multiple other applications</li>
-                            <ul>
-                                <li>I analyzed Letterboxd</li>
-                            </ul>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>A well-established idea with a defined group of target users</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="carousel-right">
-                        <div id="slideshow" class="slideshow-container">
-                            <div class="mySlidesStories">
-                                <img style="width: 100%;" src="assets/Web_Projects/MotionFlix/User_Personas/Film_Buff.png" alt="First Slide">
-                            </div>
-                            <div class="mySlidesStories">
-                                <img style="width: 100%;" src="assets/Web_Projects/MotionFlix/User_Personas/Film_Novice.png" alt="Second Slide">
-                            </div>
-                            <div class="mySlidesStories">
-                                <img style="width: 100%;" src="assets/Web_Projects/MotionFlix/User_Personas/Film_Apathetic.jpg" alt="Third Slide">
-                            </div>
-                            <button class="prev" onclick="plusSlidesStories(-1)">❮</button>
-                            <button class="next" onclick="plusSlidesStories(1)">❯</button>
-                        </div>
-                        <br>
-                        <div style="text-align: center;">
-                            <span class="dotStories" onclick="currentSlideStories(1)"></span>
-                            <span class="dotStories" onclick="currentSlideStories(2)"></span>
-                            <span class="dotStories" onclick="currentSlideStories(3)"></span>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <!-- Must have Could have Should have-->
-                    <div class="card-light must-have">
-                        <h4 class="center_text container-heading">MUST HAVE</h4>
-                            <ul style="font-size: 13pt;">
-                                <li>A simplistic structure and design</li>
-                                <uL>
-                                    <li>Which will allow users to more efficiently and effectively use the app</li>
-                                </uL>
-                                <li>An interface that one can use without much of a learning curve</li>
-                                <uL>
-                                    <li>A strong sense of learnability</li>
-                                </uL>
-                                <li>An aspect of interactivity to keep users engaged</li>
-                                <ul>
-                                    <li>Interactive filtering/quiz features</li>
-                                </ul>
-                                <li>Efficiency when it comes to finding information or accessing different components of the app</li>
-                            <li>A strong sense of functionality</li>
-                        </ul>
-                    </div>
-                    <div class="card-light could-have">
-                       <h4 class="center_text container-heading">COULD HAVE</h4>
-                        <ul style="font-size: 13pt;">
-                            <li>A way for users to keep track of movies that they have seen or would like to see</li>
-                            <ul>
-                                <li>Additional interactive component + more personalized experience</li>
-                            </ul>
-                            <li>A progress bar for quizzes so users know how far they are</li>
-                            <ul>
-                                <li>To prevent user frustration</li></li>
-                            </ul>
-                            <li>Illustrations that can enhance the visual aspect of the pages</li>
-                            <ul>
-                                <li>To keep users engaged</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="card-light should-have">
-                        <h4 class="center_text container-heading"><strong>SHOULD HAVE</strong></h4>
-                        <ul style="font-size: 13pt;">
-                            <li>A casual tone when portraying different kinds of information</li>
-                            <ul>
-                                <li>For a wide audience of viewers</li>
-                            </ul>
-                            <li>Have a leisurely atmosphere so as to prevent any pressure on users</li>
-                            <ul>
-                                <li>Would make a more supportive and collaborative environment overall</li>
-                                <li>Would enhance users' educational experiences</li>
-                            </ul>
-                        </ul>
-                    </div>
-
-                    <br>
-
-                    <!-- PART 2: LOW-FIDELITY PROTOTYPING -->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 2: </h4>
-                        <h4 class="part-description">LOW-FIDELITY PROTOTYPE</h4>
-                        <ul class="part-list">
-                            <li>Individual + Group Design of Low-Fidelity Prototype</li>
-                            <li>Cognitive Walkthrough: Four key tasks with each user persona</li>
-                            <ul>
-                                <li>Searching for a movie to learn more about</li>
-                                <li>Adding a movie to the watchlist</li>
-                                <li>Searching for a movie sorted as an action film with the rating going from decreasing to increasing</li>
-                                <li>Searching for trivia they can play</li>
-                            </ul>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>Valuable explorative results to use for future phases in the project</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <div class="carousel-right">
-                         <div id='slideshow' class='slideshow-container'>
-                            <div class="mySlidesWireframe">
-                                <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/home_page.png" alt="First Slide">
-                            </div>
-                            <div class="mySlidesWireframe">
-                                <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/browsing_page.png" alt="Second Slide">
-                            </div>
-                            <div class="mySlidesWireframe">
-                                <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/trivia_main_page.png" alt="Third Slide">
-                            </div>
-                            <div class="mySlidesWireframe">
-                                <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/easy_trivia_page.png" alt="Fourth Slide">
-                            </div>
-                            <div class="mySlidesWireframe">
-                                <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/medium_trivia_page.png" alt="Fifth Slide">
-                            </div>
-                            <div class="mySlidesWireframe">
-                                <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/hard_trivia_page.png" alt="Sixth Slide">
-                            </div>
-                            <button class="prev" onclick="plusSlidesWireframe(-1)">❮</button>
-                            <button class="next" onclick="plusSlidesWireframe(1)">❯</button>
-                        </div>
-                        <div style="text-align: center;">
-                            <span class="dotWireframe" onclick="currentSlideWireframe(1)"></span>
-                            <span class="dotWireframe" onclick="currentSlideWireframe(2)"></span>
-                            <span class="dotWireframe" onclick="currentSlideWireframe(3)"></span>
-                            <span class="dotWireframe" onclick="currentSlideWireframe(4)"></span>
-                            <span class="dotWireframe" onclick="currentSlideWireframe(5)"></span>
-                            <span class="dotWireframe" onclick="currentSlideWireframe(6)"></span>
-                        </div>
-                    </div>
-
-                    <br>
-
-                    <!-- PART 3: HORIZONTAL AND VERTICAL PROTOTYPES -->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 3: </h4>
-                        <h4 class="part-description">HORIZONTAL AND VERTICAL PROTOTYPE</h4>
-                        <ul class="part-list">
-                            <li>Implementing the prototype with code</li>
-                            <li>Making decisions about features</li>
-                            <li>Providing a descriptive walkthrough</li>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>A fully functioning local website that we can test with potential users!</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <video class="video-right" autoplay loop muted defaultMuted playsinline>
-                        <source src="assets/Web_Projects/MotionFlix/browsing_demo (1).mp4"">
-                    </video>
-
-                    <br>
-
-                    <!-- PART 4: USABILITY TESTING -->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 4: </h4>
-                        <h4 class="part-description">USABILITY TESTING</h4>
-                        <ul class="part-list">
-                            <li>Conducting usability tests</li>
-                            <li>Collecting relevant data about usability issues</li>
-                            <ul>
-                                <li>Use of NASA-TLX and Satisfaction Questionnaire</li>
-                            </ul>
-                            <li>Re-analyzing four main tasks from Phase Two</li>
-                            <ul>
-                                <li>Completion times and effectiveness of tasks</li>
-                            </ul>
-                            <li>Documenting possible solutions to usability issues</li>
-                            <li>Reflecting on the process - what went will, what didn't, possibilities of going live</li>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>A strong understanding of how to conduct user testing</li>
-                                <li>A newfound knowledge of how effective our application really was</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <img class="image-right" src="assets/Web_Projects/MotionFlix/Usability_Test/satisfaction_questionnaire.png">
-                    <img class="image-left-half" src="assets/Web_Projects/MotionFlix/Usability_Test/nasa_tlx_data.png">
-                    <img class="image-right-half" src="assets/Web_Projects/MotionFlix/Usability_Test/completion_times_data.png">
+                    </ul>
                 </div>
+                <div class="card-light my-contributions">
+                    <h4 class="container-heading">My contributions</h4>
+                    <ul>
+                        <li>Kept group organized and maintained effective documentation through each project phase</li>
+                        <li>Browsing Page</li>
+                        <ul>
+                            <li>Wrote JavaScript functions to read the dataset and filter it (genre, IMDb rating, search bar)</li>
+                            <li>Displayed filtered data with HTML and Bootstrap</li>
+                        </ul>
+                        <li>Trivia Page</li>
+                        <ul>
+                            <li>Implemented: General easy, medium, hard levels</li>
+                            <ul>
+                                <li>Movie-themed questions I wrote myself</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                </div>
+
+                <!-- What I learned -->
+                <div class="card-lg what-i-learned">
+                    <h4 class="container-heading">What I Learned:</h4>
+                    <p>How to create user stories and perform competitive assessments.</p>
+                    <p>How to design low-fidelity wireframes.</p>
+                    <p>How to implement a high-functioning prototype.</p>
+                    <p>And finally - how to utilize user testing to inform future phases of a project.</p>
+                </div>
+
+                <!-- PART 1: USER PERSONAS AND REQUIREMENTS -->
+                <div class="part-left">
+                    <h4 class="part-label">PART 1: </h4>
+                    <h4 class="part-description">USER PERSONAS AND REQUIREMENTS</h4>
+                    <ul class="part-list">
+                        <li>Brainstorming an application related to film</li>
+                        <li>Identifying potential target users</li>
+                        <li>Conducting interviews with said users to establish requirements</li>
+                        <li>Creating user personas</li>
+                        <ul>
+                            <li>Based on the individuals we interviewed</li>
+                        </ul>
+                        <li>Completing a competitive assessment with multiple other applications</li>
+                        <ul>
+                            <li>I analyzed Letterboxd</li>
+                        </ul>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A well-established idea with a defined group of target users</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="carousel-right">
+                    <div id="slideshow" class="slideshow-container">
+                        <div class="mySlidesStories">
+                            <img style="width: 100%;" src="assets/Web_Projects/MotionFlix/User_Personas/Film_Buff.png" alt="First Slide">
+                        </div>
+                        <div class="mySlidesStories">
+                            <img style="width: 100%;" src="assets/Web_Projects/MotionFlix/User_Personas/Film_Novice.png" alt="Second Slide">
+                        </div>
+                        <div class="mySlidesStories">
+                            <img style="width: 100%;" src="assets/Web_Projects/MotionFlix/User_Personas/Film_Apathetic.jpg" alt="Third Slide">
+                        </div>
+                        <button class="prev" onclick="plusSlidesStories(-1)">❮</button>
+                        <button class="next" onclick="plusSlidesStories(1)">❯</button>
+                    </div>
+                    <br>
+                    <div style="text-align: center;">
+                        <span class="dotStories" onclick="currentSlideStories(1)"></span>
+                        <span class="dotStories" onclick="currentSlideStories(2)"></span>
+                        <span class="dotStories" onclick="currentSlideStories(3)"></span>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- Must have Could have Should have-->
+                <div class="card-light must-have">
+                    <h4 class="center_text container-heading">MUST HAVE</h4>
+                        <ul style="font-size: 13pt;">
+                            <li>A simplistic structure and design</li>
+                            <uL>
+                                <li>Which will allow users to more efficiently and effectively use the app</li>
+                            </uL>
+                            <li>An interface that one can use without much of a learning curve</li>
+                            <uL>
+                                <li>A strong sense of learnability</li>
+                            </uL>
+                            <li>An aspect of interactivity to keep users engaged</li>
+                            <ul>
+                                <li>Interactive filtering/quiz features</li>
+                            </ul>
+                            <li>Efficiency when it comes to finding information or accessing different components of the app</li>
+                        <li>A strong sense of functionality</li>
+                    </ul>
+                </div>
+                <div class="card-light could-have">
+                    <h4 class="center_text container-heading">COULD HAVE</h4>
+                    <ul style="font-size: 13pt;">
+                        <li>A way for users to keep track of movies that they have seen or would like to see</li>
+                        <ul>
+                            <li>Additional interactive component + more personalized experience</li>
+                        </ul>
+                        <li>A progress bar for quizzes so users know how far they are</li>
+                        <ul>
+                            <li>To prevent user frustration</li></li>
+                        </ul>
+                        <li>Illustrations that can enhance the visual aspect of the pages</li>
+                        <ul>
+                            <li>To keep users engaged</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="card-light should-have">
+                    <h4 class="center_text container-heading"><strong>SHOULD HAVE</strong></h4>
+                    <ul style="font-size: 13pt;">
+                        <li>A casual tone when portraying different kinds of information</li>
+                        <ul>
+                            <li>For a wide audience of viewers</li>
+                        </ul>
+                        <li>Have a leisurely atmosphere so as to prevent any pressure on users</li>
+                        <ul>
+                            <li>Would make a more supportive and collaborative environment overall</li>
+                            <li>Would enhance users' educational experiences</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <br>
+
+                <!-- PART 2: LOW-FIDELITY PROTOTYPING -->
+                <div class="part-left">
+                    <h4 class="part-label">PART 2: </h4>
+                    <h4 class="part-description">LOW-FIDELITY PROTOTYPE</h4>
+                    <ul class="part-list">
+                        <li>Individual + Group Design of Low-Fidelity Prototype</li>
+                        <li>Cognitive Walkthrough: Four key tasks with each user persona</li>
+                        <ul>
+                            <li>Searching for a movie to learn more about</li>
+                            <li>Adding a movie to the watchlist</li>
+                            <li>Searching for a movie sorted as an action film with the rating going from decreasing to increasing</li>
+                            <li>Searching for trivia they can play</li>
+                        </ul>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>Valuable explorative results to use for future phases in the project</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="carousel-right">
+                        <div id='slideshow' class='slideshow-container'>
+                        <div class="mySlidesWireframe">
+                            <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/home_page.png" alt="First Slide">
+                        </div>
+                        <div class="mySlidesWireframe">
+                            <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/browsing_page.png" alt="Second Slide">
+                        </div>
+                        <div class="mySlidesWireframe">
+                            <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/trivia_main_page.png" alt="Third Slide">
+                        </div>
+                        <div class="mySlidesWireframe">
+                            <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/easy_trivia_page.png" alt="Fourth Slide">
+                        </div>
+                        <div class="mySlidesWireframe">
+                            <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/medium_trivia_page.png" alt="Fifth Slide">
+                        </div>
+                        <div class="mySlidesWireframe">
+                            <img class="d-block w-100" src="assets/Web_Projects/MotionFlix/Lo_Fi_Prototype/hard_trivia_page.png" alt="Sixth Slide">
+                        </div>
+                        <button class="prev" onclick="plusSlidesWireframe(-1)">❮</button>
+                        <button class="next" onclick="plusSlidesWireframe(1)">❯</button>
+                    </div>
+                    <div style="text-align: center;">
+                        <span class="dotWireframe" onclick="currentSlideWireframe(1)"></span>
+                        <span class="dotWireframe" onclick="currentSlideWireframe(2)"></span>
+                        <span class="dotWireframe" onclick="currentSlideWireframe(3)"></span>
+                        <span class="dotWireframe" onclick="currentSlideWireframe(4)"></span>
+                        <span class="dotWireframe" onclick="currentSlideWireframe(5)"></span>
+                        <span class="dotWireframe" onclick="currentSlideWireframe(6)"></span>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- PART 3: HORIZONTAL AND VERTICAL PROTOTYPES -->
+                <div class="part-left">
+                    <h4 class="part-label">PART 3: </h4>
+                    <h4 class="part-description">HORIZONTAL AND VERTICAL PROTOTYPE</h4>
+                    <ul class="part-list">
+                        <li>Implementing the prototype with code</li>
+                        <li>Making decisions about features</li>
+                        <li>Providing a descriptive walkthrough</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A fully functioning local website that we can test with potential users!</li>
+                        </ul>
+                    </ul>
+                </div>
+                <video class="video-right" autoplay loop muted defaultMuted playsinline>
+                    <source src="assets/Web_Projects/MotionFlix/browsing_demo (1).mp4"">
+                </video>
+
+                <br>
+
+                <!-- PART 4: USABILITY TESTING -->
+                <div class="part-left">
+                    <h4 class="part-label">PART 4: </h4>
+                    <h4 class="part-description">USABILITY TESTING</h4>
+                    <ul class="part-list">
+                        <li>Conducting usability tests</li>
+                        <li>Collecting relevant data about usability issues</li>
+                        <ul>
+                            <li>Use of NASA-TLX and Satisfaction Questionnaire</li>
+                        </ul>
+                        <li>Re-analyzing four main tasks from Phase Two</li>
+                        <ul>
+                            <li>Completion times and effectiveness of tasks</li>
+                        </ul>
+                        <li>Documenting possible solutions to usability issues</li>
+                        <li>Reflecting on the process - what went will, what didn't, possibilities of going live</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A strong understanding of how to conduct user testing</li>
+                            <li>A newfound knowledge of how effective our application really was</li>
+                        </ul>
+                    </ul>
+                </div>
+                <img class="image-right" src="assets/Web_Projects/MotionFlix/Usability_Test/satisfaction_questionnaire.png">
+                <img class="image-left-half" src="assets/Web_Projects/MotionFlix/Usability_Test/nasa_tlx_data.png">
+                <img class="image-right-half" src="assets/Web_Projects/MotionFlix/Usability_Test/completion_times_data.png">
             </div>
 
             <hr>
@@ -315,3 +317,4 @@
 </html>
 
 <script src="js/carousel.js"></script>
+<script src="js/full_screen_video.js"></script>

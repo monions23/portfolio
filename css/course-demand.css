@@ -281,6 +281,10 @@
 /* For visual guide on mobile phones */
 @media (max-width: 452px) {
 
+    .data-video {
+        height: 110%;
+    }
+
     /* Course demand squares */
     .guide-item {
 

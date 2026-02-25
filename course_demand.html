@@ -42,321 +42,343 @@
         <h5 class="project-pg-subtitle">D3.JS | HTML | CSS</h5>
             
         <!-- Video alongside project description -->
-        <div class="container-large mx-auto">
-            <div class="intro-video">
-                <video class="data-video" autoplay loop muted defaultMuted playsinline width="100%" height="100%">
+        <!-- Note: IDs are for full-screen functionality -->
+        <div class="content-section">
+            <div class="intro-video" id="project-video-container">
+                <video class="data-video" id="project-video" autoplay loop muted defaultMuted playsinline width="100%" height="100%">
                     <source src="assets/Data_Work/Course_Demand/reg_anim_demo.mp4" style="width: 100%;">
                 </video>
+                <div class="controls"> 
+                    <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
+                </div>
             </div>
 
-            <div class="content-section">
-                <div class="grid-container">
+            <div class="grid-container">
 
-                    <!-- Project background and contributions -->
-                    <div class="card-light project-background">
-                        <h4 class="center_text container-heading">Project Background (Spring 2025)</h4>
+                <!-- Project background and contributions -->
+                <div class="card-light project-background">
+                    <h4 class="center_text container-heading">Project Background (Spring 2025)</h4>
+                    <ul>
+                        <li>A data visualization meant to assist college registrars in analyzing course demand</li>
                         <ul>
-                            <li>A data visualization meant to assist college registrars in analyzing course demand</li>
-                            <ul>
-                                <li>Helps answer the question: Do we need to change this class's current capacity?</li>
-                            </ul>
-                            <li>Allows for comparison of enrollment, waitlist, and open seats</li>
-                            <ul>
-                                <li>Plus key registration events such as maximum enrollment and maximum waitlist amounts</li>
-                            </ul>
-                            <li>Emphasis on the <strong>current</strong> term</li>
+                            <li>Helps answer the question: Do we need to change this class's current capacity?</li>
                         </ul>
-                    </div>
-                    <div class="card-light my-contributions">
-                        <h4 class="center_text container-heading">My Contributions (Summer 2025)</h4>
+                        <li>Allows for comparison of enrollment, waitlist, and open seats</li>
                         <ul>
-                            <li>Implementing a new feature to analyze <strong>prior</strong> terms</li>
-                            <ul>
-                                <li>Animating the bullet chart: displaying data in real time throughout a registration period</li>
-                                <li>Adding a line chart: supplemental information to convey how registration changed over time</li>
-                            </ul>
-                            <li>Allowing for different methods of user interaction</li>
-                            <ul>
-                                <li>Play and pause feature</li>
-                                <li>Click and drag (scrubbing) feature</li>
-                            </ul>
+                            <li>Plus key registration events such as maximum enrollment and maximum waitlist amounts</li>
                         </ul>
-                    </div>
+                        <li>Emphasis on the <strong>current</strong> term</li>
+                    </ul>
+                </div>
+                <div class="card-light my-contributions">
+                    <h4 class="center_text container-heading">My Contributions (Summer 2025)</h4>
+                    <ul>
+                        <li>Implementing a new feature to analyze <strong>prior</strong> terms</li>
+                        <ul>
+                            <li>Animating the bullet chart: displaying data in real time throughout a registration period</li>
+                            <li>Adding a line chart: supplemental information to convey how registration changed over time</li>
+                        </ul>
+                        <li>Allowing for different methods of user interaction</li>
+                        <ul>
+                            <li>Play and pause feature</li>
+                            <li>Click and drag (scrubbing) feature</li>
+                        </ul>
+                    </ul>
+                </div>
 
-                    <!-- What I learned -->
-                    <div class="card-lg what-i-learned">
-                        <h4 class="center-text container-heading">What I Learned:</h4>
-                        <p>How to create complicated animations on web platforms.</p>
-                        <p>How to accurately summarize complex data.</p>
-                        <p>How HTML and CSS can effectively interact with D3.JS to create visualizations.</p>
-                        <p>And finally - how to implement a multi-step project in a professional code stack.</p>
-                    </div>
+                <!-- What I learned -->
+                <div class="card-lg what-i-learned">
+                    <h4 class="center-text container-heading">What I Learned:</h4>
+                    <p>How to create complicated animations on web platforms.</p>
+                    <p>How to accurately summarize complex data.</p>
+                    <p>How HTML and CSS can effectively interact with D3.JS to create visualizations.</p>
+                    <p>And finally - how to implement a multi-step project in a professional code stack.</p>
+                </div>
 
-                    <!-- Course Demand Visual Guide-->
-                    <h4 class="visual-guide-heading">Visual Guide</h4>
-                    <!-- Ranges -->
-                    <div class="ranges">
-                        <div class="ranges-grid">
-                            <h5 class="visual-guide-subheading ranges">Ranges (Bars)</h5>
-                            <div class="guide-item enrollment">
-                                <div class="square-grid">
-                                    <div class="square-enrollment"></div>
-                                    <p class="square-grid-text">Students Enrolled</p>
-                                </div>
+                <!-- Course Demand Visual Guide-->
+                <h4 class="visual-guide-heading">Visual Guide</h4>
+                <!-- Ranges -->
+                <div class="ranges">
+                    <div class="ranges-grid">
+                        <h5 class="visual-guide-subheading ranges">Ranges (Bars)</h5>
+                        <div class="guide-item enrollment">
+                            <div class="square-grid">
+                                <div class="square-enrollment"></div>
+                                <p class="square-grid-text">Students Enrolled</p>
                             </div>
-                            <div class="guide-item open-seats">
-                                <div class="square-grid">
-                                    <div class="square-open-seats"></div>
-                                    <p class="square-grid-text">Open Seats</p>
-                                </div>
+                        </div>
+                        <div class="guide-item open-seats">
+                            <div class="square-grid">
+                                <div class="square-open-seats"></div>
+                                <p class="square-grid-text">Open Seats</p>
                             </div>
-                            <div class="guide-item waitlist">
-                                <div class="square-grid">
-                                    <div class="square-waitlist"></div>
-                                    <p class="square-grid-text">Students Waitlisted</p>
-                                </div>
+                        </div>
+                        <div class="guide-item waitlist">
+                            <div class="square-grid">
+                                <div class="square-waitlist"></div>
+                                <p class="square-grid-text">Students Waitlisted</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Markers -->
-                    <div class="markers">
-                        <div class="markers-grid">
-                            <h5 class="visual-guide-subheading markers">Markers (Lines)</h5>
-                            <div class="guide-item max-enrollment">
-                                <div class="square-grid">
-                                    <div class="square-max-enrollment"></div>
-                                    <p class="square-grid-text">Maximum Enrollment</p>
-                                </div>
+                </div>
+                <!-- Markers -->
+                <div class="markers">
+                    <div class="markers-grid">
+                        <h5 class="visual-guide-subheading markers">Markers (Lines)</h5>
+                        <div class="guide-item max-enrollment">
+                            <div class="square-grid">
+                                <div class="square-max-enrollment"></div>
+                                <p class="square-grid-text">Maximum Enrollment</p>
                             </div>
-                            <div class="guide-item current-cap">
-                                <div class="square-grid">
-                                    <div class="square-current-capacity"></div>
-                                    <p class="square-grid-text">Current Capacity</p>
-                                </div>
+                        </div>
+                        <div class="guide-item current-cap">
+                            <div class="square-grid">
+                                <div class="square-current-capacity"></div>
+                                <p class="square-grid-text">Current Capacity</p>
                             </div>
-                            <div class="guide-item max-waitlist">
-                                <div class="square-grid">
-                                    <div class="square-max-waitlist"></div>
-                                    <p class="square-grid-text">Maximum Waitlist</p>
-                                </div>
+                        </div>
+                        <div class="guide-item max-waitlist">
+                            <div class="square-grid">
+                                <div class="square-max-waitlist"></div>
+                                <p class="square-grid-text">Maximum Waitlist</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- MUST HAVE COULD HAVE SHOULD HAVE-->
-                    <div class="card-light must-have">
-                        <h4 class="center_text container-heading">MUST HAVE</h4>
+                <!-- MUST HAVE COULD HAVE SHOULD HAVE-->
+                <div class="card-light must-have">
+                    <h4 class="center_text container-heading">MUST HAVE</h4>
+                    <ul>
+                        <li>Bar graph that starts on first day of enrollment and reacts over time</li>
+                        <uL>
+                            <li>Animates in real time - key frame is hours over the registration period, not events</li>
+                        </uL>
+                        <li>Line chart drawn directly underneath bar graph</li>
+                        <uL>
+                            <li>Synchronized with bar graph as it animates</li>
+                        </uL>
+                        <li>Ability for user to click on any point in the line graph, and have the corresponding enrollment/waitlist values reflected in bar graph</li>
+                    </ul>
+                </div>
+                <div class="card-light could-have">
+                    <h4 class="center_text container-heading"><strong>COULD HAVE</strong></h4>
+                    <ul>
+                        <li>Flexibility for user to interact with the animation before it finishes- pausing, playing, viewing certain windows of time, etc.</li>
+                        <uL>
+                            <li>Scrubbing - Click and drag feature for line chart toolip, with bar chart animating accordingly</li></li>
+                        </ul>
+                        <li>Indication of key dates and events (ex. Peak Enrollment and Waitlist) that are drawn as the animation plays out</li>
+                    </ul>
+                </div>
+                <div class="card-light should-have">
+                    <h4 class="center_text container-heading"><strong>SHOULD HAVE</strong></h4>
+                    <ul>
+                        <li>Smooth, aesthetically pleasing animations that are also accurate to the data</li>
+                        <li>Aspect that accounts for user overwhelm</li>
                         <ul>
-                            <li>Bar graph that starts on first day of enrollment and reacts over time</li>
-                            <uL>
-                                <li>Animates in real time - key frame is hours over the registration period, not events</li>
-                            </uL>
-                            <li>Line chart drawn directly underneath bar graph</li>
-                            <uL>
-                                <li>Synchronized with bar graph as it animates</li>
-                            </uL>
-                            <li>Ability for user to click on any point in the line graph, and have the corresponding enrollment/waitlist values reflected in bar graph</li>
+                            <li>Playing animation as an optional feature that users can choose to view</li>
+                            <li>Multiple different ways to interact with an unfamiliar interface</li>
                         </ul>
-                    </div>
-                    <div class="card-light could-have">
-                        <h4 class="center_text container-heading"><strong>COULD HAVE</strong></h4>
+                        <li>Replay functionality</li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <!-- PART 1: FAMILIARIZATION-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 1: </h4>
+                    <h4 class="part-description">FAMILIARIZATION</h4>
+
+                    <ul class="part-list">
+                        <li>Controlling options for clients' differing student information system (SIS) data</li>
                         <ul>
-                            <li>Flexibility for user to interact with the animation before it finishes- pausing, playing, viewing certain windows of time, etc.</li>
-                            <uL>
-                                <li>Scrubbing - Click and drag feature for line chart toolip, with bar chart animating accordingly</li></li>
-                            </ul>
-                            <li>Indication of key dates and events (ex. Peak Enrollment and Waitlist) that are drawn as the animation plays out</li>
+                            <li>Peak (max) enrollment vs previous (start of term) enrollment</li>
                         </ul>
-                    </div>
-                    <div class="card-light should-have">
-                        <h4 class="center_text container-heading"><strong>SHOULD HAVE</strong></h4>
+                        <li>Styling changes between form values</li>
+                        <li>Adding text backgrounds dynamically to keep information legible</li>
+                        <li>Implementing new previous terms options</li>
+                        <li><strong>Outcomes</strong></li>
                         <ul>
-                            <li>Smooth, aesthetically pleasing animations that are also accurate to the data</li>
-                            <li>Aspect that accounts for user overwhelm</li>
-                            <ul>
-                                <li>Playing animation as an optional feature that users can choose to view</li>
-                                <li>Multiple different ways to interact with an unfamiliar interface</li>
-                            </ul>
-                            <li>Replay functionality</li>
+                            <li>A strong familiarity with the course-demand interface, data visualization, and general styling</li>
                         </ul>
-                    </div>
-
-                    <br>
-
-                    <!-- PART 1: FAMILIARIZATION-->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 1: </h4>
-                        <h4 class="part-description">FAMILIARIZATION</h4>
-
-                        <ul class="part-list">
-                            <li>Controlling options for clients' differing student information system (SIS) data</li>
-                            <ul>
-                                <li>Peak (max) enrollment vs previous (start of term) enrollment</li>
-                            </ul>
-                            <li>Styling changes between form values</li>
-                            <li>Adding text backgrounds dynamically to keep information legible</li>
-                            <li>Implementing new previous terms options</li>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>A strong familiarity with the course-demand interface, data visualization, and general styling</li>
-                            </ul>
-                        </ul>
-                    </div>
-                    <video class="video-right" autoplay loop muted defaultMuted playsinline width="99%" height="99%">
+                    </ul>
+                </div>
+                <div class="video-right" id="project-video-container">
+                    <video id="project-video" autoplay loop muted defaultMuted playsinline width="99%" height="99%">
                         <source src="assets/Data_Work/Course_Demand/summary_stats_screen_recording.mp4" style="width: 99%;">
                     </video>
+                    <div class="controls"> 
+                        <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
+                    </div>
+                </div>
 
-                    <br>
+                <br>
 
-                    <!-- PART 2: PROTOTYPING-->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 2: </h4>
-                        <h4 class="part-description">PROTOTYPING</h4>
-                        <ul class="part-list">
-                            <li>Animated stacked bar chart + synchronized line chart</li>
-                            <li>Chose hours as keyframes</li>
+                <!-- PART 2: PROTOTYPING-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 2: </h4>
+                    <h4 class="part-description">PROTOTYPING</h4>
+                    <ul class="part-list">
+                        <li>Animated stacked bar chart + synchronized line chart</li>
+                        <li>Chose hours as keyframes</li>
+                        <ul>
+                            <li>Day-by-day: simpler, but less descriptive</li>
+                            <li>Hour-by-hour: more descriptive for clients</li>
+                        </ul>
+                        <li>How to handle multiple events within the hour?</li>
+                        <ul>
+                            <li>Use of summary statistics</li>
                             <ul>
-                                <li>Day-by-day: simpler, but less descriptive</li>
-                                <li>Hour-by-hour: more descriptive for clients</li>
-                            </ul>
-                            <li>How to handle multiple events within the hour?</li>
-                            <ul>
-                                <li>Use of summary statistics</li>
-                                <ul>
-                                    <li>ALWAYS transition to end-of-hour value</li>
-                                    <li>Transition to maximum IF it's higher than end-of-hour value</li>
-                                    <li>Transition to minimum IF it's lower than start-of-hour value</li>
-                                </ul>
-                            </ul>
-                            <li>Use of JavaScript's SetInterval method for each hour</li>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>A valuable starting point for my animation</li>
-                                <li>But an incomplete solution for what was needed</li>
+                                <li>ALWAYS transition to end-of-hour value</li>
+                                <li>Transition to maximum IF it's higher than end-of-hour value</li>
+                                <li>Transition to minimum IF it's lower than start-of-hour value</li>
                             </ul>
                         </ul>
-                    </div>
-                    <video class="video-right" autoplay loop muted defaultMuted playsinline width="99%" height="99%">
-                        <source src="assets/Data_Work/Course_Demand/prototype_firefox.mp4" style="width: 95%;">
+                        <li>Use of JavaScript's SetInterval method for each hour</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A valuable starting point for my animation</li>
+                            <li>But an incomplete solution for what was needed</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="video-right" id="project-video-container">
+                    <video id="project-video" autoplay loop muted defaultMuted playsinline style="width: 100%;">
+                        <source src="assets/Data_Work/Course_Demand/prototype_firefox.mp4">
                     </video>
-
-                    <br>
-
-                    <!-- THE PROBLEM -->
-                    <h3 class="problem-header">THE PROBLEM</h3>
-                    <p class="disclaimer">Note: Stats generalized based on given dataset</p>
-                    <div class="problem-item hours">
-                        <div class="problem-grid">
-                            <h3 class="problem-stat">1000</h3>
-                            <p class="problem-subheader">HOURS IN REGISTRATION PERIOD</p>
-                        </div>
+                    <div class="controls"> 
+                        <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
                     </div>
-                    <div class="problem-item events">
-                        <div class="problem-grid">
-                            <h3 class="problem-stat">100</h3>
-                            <p class="problem-subheader">REGISTRATION EVENTS</p>
-                        </div>
+                </div>
+
+                <br>
+
+                <!-- THE PROBLEM -->
+                <h3 class="problem-header">THE PROBLEM</h3>
+                <p class="disclaimer">Note: Stats generalized based on given dataset</p>
+                <div class="problem-item hours">
+                    <div class="problem-grid">
+                        <h3 class="problem-stat">1000</h3>
+                        <p class="problem-subheader">HOURS IN REGISTRATION PERIOD</p>
                     </div>
-                    <div class="problem-item key-points">
-                        <div class="problem-grid">
-                            <h3 class="problem-stat">2</h3>
-                            <p class="problem-subheader">KEY POINTS (MAX/MIN)</p>
-                        </div>
+                </div>
+                <div class="problem-item events">
+                    <div class="problem-grid">
+                        <h3 class="problem-stat">100</h3>
+                        <p class="problem-subheader">REGISTRATION EVENTS</p>
                     </div>
-                    <br>
-                    <p class="problem-questions">How to animate a 10-second animation accurately when the key frame <strong>must</strong> be the hour?</p>
-                    <p class="problem-questions">Prototype's animation approach just wasn't cutting it: smooth on Edge/Chrome, but <strong>not</strong> on Firefox and not across machines.</p>
-                    <p class="problem-questions">SetInterval's timing was subjective and inconsistent, and I was using it for both <strong>discrete</strong> data (the bar chart) and <strong>continuous</strong> data (the line chart) - a <strong>mistake</strong>.</p>
+                </div>
+                <div class="problem-item key-points">
+                    <div class="problem-grid">
+                        <h3 class="problem-stat">2</h3>
+                        <p class="problem-subheader">KEY POINTS (MAX/MIN)</p>
+                    </div>
+                </div>
+                <br>
+                <p class="problem-questions">How to animate a 10-second animation accurately when the key frame <strong>must</strong> be the hour?</p>
+                <p class="problem-questions">Prototype's animation approach just wasn't cutting it: smooth on Edge/Chrome, but <strong>not</strong> on Firefox and not across machines.</p>
+                <p class="problem-questions">SetInterval's timing was subjective and inconsistent, and I was using it for both <strong>discrete</strong> data (the bar chart) and <strong>continuous</strong> data (the line chart) - a <strong>mistake</strong>.</p>
 
 
-                    <br>
+                <br>
 
-                    <!-- PART 3: PROBLEM-SOLVING-->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 3: </h4>
-                        <h4 class="part-description">PROBLEM-SOLVING</h4>
+                <!-- PART 3: PROBLEM-SOLVING-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 3: </h4>
+                    <h4 class="part-description">PROBLEM-SOLVING</h4>
 
-                        <ul class="part-list">
-                            <li>Approaching the animation in a different way</li>
+                    <ul class="part-list">
+                        <li>Approaching the animation in a different way</li>
+                        <ul>
+                            <li><strong>Bar Chart</strong>: Using browser refresh rate (not SetInterval) for better efficiency and compatibility</li>
+                            <li><strong>Line Chart</strong>: Using a single duration</li>
                             <ul>
-                                <li><strong>Bar Chart</strong>: Using browser refresh rate (not SetInterval) for better efficiency and compatibility</li>
-                                <li><strong>Line Chart</strong>: Using a single duration</li>
+                                <li>Animating line itself - not proportional with hours on x-axis</li>
                                 <ul>
-                                    <li>Animating line itself - not proportional with hours on x-axis</li>
-                                    <ul>
-                                        <li>Peaks/falls would slow it down</li>
-                                    </ul>
-                                    <li>Instead - white rectangle covers line chart and gradually unveils</li>
-                                    <ul>
-                                        <li>Proportional over time, synchronizes with bullet chart</li>
-                                    </ul>
+                                    <li>Peaks/falls would slow it down</li>
+                                </ul>
+                                <li>Instead - white rectangle covers line chart and gradually unveils</li>
+                                <ul>
+                                    <li>Proportional over time, synchronizes with bullet chart</li>
                                 </ul>
                             </ul>
-                            <li><strong>Outcomes</strong></li>
+                        </ul>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A much more accurate and smooth animation</li>
+                            <li>Compatibility across browsers and devices</li>
+                        </ul>
+                    </ul>
+                </div>
+                <img class ="image-right" style = "width: 100%;" src="assets/Data_Work/Course_Demand/problem_diagram.png">
+
+                <br>
+
+                <!-- PART 4: INTEGRATING AND REVISING-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 4: </h4>
+                    <h4 class="part-description">INTEGRATING AND REVISING</h4>
+                    <ul class="part-list">
+                        <li>Integrating prototype into bullet chart styling</li>
+                        <li>Incorporating interactive features</li>
+                        <ul>
+                            <li>Play/pause functionality</li>
+                            <li>Dynamic tooltips</li>
+                            <li>Snapping and scrubbing</li>
                             <ul>
-                                <li>A much more accurate and smooth animation</li>
-                                <li>Compatibility across browsers and devices</li>
+                                <li>One a Must Have, one a Could Have</li>
                             </ul>
                         </ul>
-                    </div>
-                    <img class ="image-right" style = "width: 100%;" src="assets/Data_Work/Course_Demand/problem_diagram.png">
-
-                    <br>
-
-                    <!-- PART 4: INTEGRATING AND REVISING-->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 4: </h4>
-                        <h4 class="part-description">INTEGRATING AND REVISING</h4>
-                        <ul class="part-list">
-                            <li>Integrating prototype into bullet chart styling</li>
-                            <li>Incorporating interactive features</li>
-                            <ul>
-                                <li>Play/pause functionality</li>
-                                <li>Dynamic tooltips</li>
-                                <li>Snapping and scrubbing</li>
-                                <ul>
-                                    <li>One a Must Have, one a Could Have</li>
-                                </ul>
-                            </ul>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>A fully functioning feature implementation</li>
-                            </ul>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A fully functioning feature implementation</li>
                         </ul>
-                    </div>
-                    <video class="video-right" autoplay loop muted defaultMuted playsinline width="99%" height="99%">
-                        <source src="assets/Data_Work/Course_Demand/reg_anim_demo.mp4" style="width: 99%;">
+                    </ul>
+                </div>
+                <div class="video-right" id="project-video-container">
+                    <video id="project-video" autoplay loop muted defaultMuted playsinline width="99%">
+                        <source src="assets/Data_Work/Course_Demand/reg_anim_demo.mp4">
                     </video>
-
-                    <br>
-
-                    <!-- PART 5: CREATIVE REIGN-->
-                    <div class="part-left">
-                        <h4 class="part-label">PART 5: </h4>
-                        <h4 class="part-description">CREATIVE REIGN</h4>
-
-                        <ul class="part-list">
-                            <li>Adding my own revisions and flair - including a demand analysis donut chart</li>
-                            <li>Interface has a lot of data displayed over time, but is lacking of proportional summary data</li>
-                            <ul>
-                                <li>Donut charts (when used correctly) can be a valuable asset in this regard</li>
-                            </ul>
-                            <li>Donut chart takes data from previous terms</li>
-                            <ul>
-                                <li>Displays proportion of terms where waitlist was greater than open seats (high demand) vs not (sufficient demand)</li>
-                            </ul>
-                            <li>Use of existing UI - green success color for lower demand, red warning color for high demand</li>
-                            <li><strong>Outcomes</strong></li>
-                            <ul>
-                                <li>My own personalized addition to the course-demand interface</li>
-                            </ul>
-                        </ul>
+                    <div class="controls"> 
+                        <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
                     </div>
-                    <video class="video-right" autoplay loop muted defaultMuted playsinline width="99%" height="99%">
+                </div>
+
+                <br>
+
+                <!-- PART 5: CREATIVE REIGN-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 5: </h4>
+                    <h4 class="part-description">CREATIVE REIGN</h4>
+
+                    <ul class="part-list">
+                        <li>Adding my own revisions and flair - including a demand analysis donut chart</li>
+                        <li>Interface has a lot of data displayed over time, but is lacking of proportional summary data</li>
+                        <ul>
+                            <li>Donut charts (when used correctly) can be a valuable asset in this regard</li>
+                        </ul>
+                        <li>Donut chart takes data from previous terms</li>
+                        <ul>
+                            <li>Displays proportion of terms where waitlist was greater than open seats (high demand) vs not (sufficient demand)</li>
+                        </ul>
+                        <li>Use of existing UI - green success color for lower demand, red warning color for high demand</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>My own personalized addition to the course-demand interface</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="video-right" id="project-video-container">
+                    <video id="project-video" autoplay loop muted defaultMuted playsinline width="99%" height="99%">
                         <source src="assets/Data_Work/Course_Demand/donut_chart.mp4" style="width: 99%;">
                     </video>
-
+                    <div class="controls"> 
+                        <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
+                    </div>
                 </div>
+
             </div>
         </div>
 
@@ -371,3 +393,5 @@
         <h5>meredith-onions@uiowa.edu</h5>
     </footer>
 </html>
+
+<script src="js/full_screen_video.js"></script>
