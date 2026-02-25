@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com');
+
 .hero-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -20,6 +22,16 @@
     grid-row: 5 / 7;
 }
 
+#profile-intro {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+#profile-description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
 .profile-pic {
     grid-column: 7 / 12;
     grid-row: 2 / 10;
@@ -28,6 +40,7 @@
     height: 110%;
     object-fit: cover;
     border-radius: 35%;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
 }
 
 #container-center {
@@ -113,13 +126,6 @@
 
     #profile-description {
         font-size: 14pt;
-    }
-
-    .profile-pic {
-        justify-self: center;
-        grid-column: 7 / 12;
-        grid-row: 2 / 6;
-        margin: 0;
     }
 
     .heading.project-heading {

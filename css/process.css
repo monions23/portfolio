@@ -1,0 +1,35 @@
+.card-light {
+    &.project-description-right-half {
+        grid-column: 7 / 13;
+        margin-top: 0;
+        height: auto;
+        grid-row: 2 / 3;
+    }
+}
+
+.image-left-half-process-bottom {
+    grid-column: 1 / 7;
+    grid-row: 2 / 4;
+    border: 1px solid #7f7e7e;
+    border-radius: 1%;
+    width: 100%;
+}
+
+@media (max-width: 1020px) {
+
+    .image-left-half-process-bottom {
+        grid-column: 1 / 13;
+        grid-row: 2 / 3;
+        border: 1px solid #7f7e7e;
+        border-radius: 1%;
+        width: 100%;
+    }
+
+    .card-light {
+        &.project-description-right-half {
+            grid-column: 1 / 13;
+            grid-row: 4 / 5;
+        }
+    }
+
+}

@@ -1,0 +1,43 @@
+.about-me-pic {
+    grid-column: 1 / 7;
+    align-self: center;
+    justify-self:center;
+    object-fit: cover;
+    height: 110%;
+    width: 90%;
+    border-radius: 35%;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+}
+
+.about-me-text {
+    padding: 30px;
+    grid-column: 7 / 13;
+    align-content: center;
+}
+
+/* Background for about me */
+#about-me-decor {
+    margin-top: 5vh;
+    background-color: #F8E4C4;
+    justify-self: center;
+    height: 100%;
+    width: 99%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 0;
+}
+
+@media (max-width: 975px) {
+    #about-me-decor {
+        padding: 20px;
+    }
+    .about-me-pic {
+        grid-column: 1 / 13;
+        height: 100%;
+    }
+
+    .about-me-text {
+        grid-column: 1 / 13;
+        padding: 10px;
+    }
+}
