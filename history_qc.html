@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meredith Onions Portfolio | History of the Quad Cities</title>
+        <meta name="description" content="A Figma project displaying the history of my hometown, with a curating scrapbooking aesthetic">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <!-- Bootstrap links to css and JavaScript-->
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+
+        <!-- My Scripts and Stylesheets -->
+        <script src="js/responsive_nav.js"></script>
+        <link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/qc-history.css">
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <!-- Navbar at top of screen -->
+    <div class="topnav" id="nav_bar">
+        <a class = "link-item" href="index.html">Home</a>
+        <a class = "link-item" href="data_projects.html">Data Visualization</a>
+        <a class = "link-item" href="web_projects.html">Web Projects</a>
+        <a class = "link-item active" href = "graphic_design.html">Design</a>
+        <a class = "link-item" href = "about_me.html">About Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="editResponsiveClass()">
+            <i class="fa fa-bars"></i>
+            </a>
+    </div>
+
+    <br>
+    
+    
+    <body>
+        <!-- Page Heading-->
+        <h2 class="project-pg-title">History of the Quad Cities</strong></h4>
+        <h5 class="project-pg-subtitle">Figma, Webflow</h5>
+
+        <!-- Page Layout -->
+         <!-- Video alongside project description -->
+        <!-- Note: IDs are for full-screen functionality -->
+        <div class="content-section">
+            <div class="intro-video" id="project-video-container">
+                <video class="qc-history-video"id="project-video" autoplay loop muted defaultMuted playsinline width="100%" height="100%">
+                    <source src="assets/Graphic_Design/Quad_Cities_History/QC_History_Recording.mp4" style="width: 100%;">
+                </video>
+                <div class="controls"> 
+                    <button id="fullScreenBtn"><i class="fa fa-expand"></i></button> 
+                </div>
+            </div>
+
+            <div class="grid-container">
+
+                <!-- Project background and contributions -->
+                <div class="card-light project-background">
+                    <h4 class="center_text container-heading">Project Background (Spring 2025)</h4>
+                    <ul>
+                        <li>A site mockup displaying the history of where I am from</li>
+                        <li>A complex historical study of the Quad Cities from the 19th century through modern day</li>
+                        <li>Required effective design choices to succinctly and accessibly convey complex information</li>
+                    </ul>
+                </div>
+                <div class="card-light my-contributions">
+                    <h4 class="center_text container-heading">My Process</h4>
+                    <ul>
+                        <li><b>Research Stage: </b>Collected inspiration and information</li>
+                        <li><b>Draft Stage: </b>Brainstormed ideas on how to convey complex information in a visually appealing way</li>
+                        <li><b>Design Stage: </b>Created wireframe in Figma and prototype in Webflow</li>
+                    </ul>
+                </div>
+                <br>
+                <!-- PART 1: RESEARCH-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 1: </h4>
+                    <h4 class="part-description">RESEARCH</h4>
+
+                    <ul class="part-list">
+                        <li>Collected visual inspiration for both design and research from various sources</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A strong understanding of the Quad Cities' history, and a general design goal</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="images-right">
+                    <img src="assets/Graphic_Design/Quad_Cities_History/initial_color_scheme_and_inspo_photos.png">
+                    <p>Initial Color Palettes and Research Images</p>
+                </div>
+
+                <br>
+
+                <!-- PART 2: PROTOTYPING-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 2: </h4>
+                    <h4 class="part-description">INITIAL DRAFT</h4>
+                    <ul class="part-list">
+                        <li>Brainstormed information architecture and planned image layout</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A layout to base my mockup on</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="images-right">
+                    <img src="assets/Graphic_Design/Quad_Cities_History/initial_ia.png">
+                    <p>Initial Information Architecture</p>
+                </div>
+
+                <br>
+
+            
+                <br>
+
+                <!-- PART 3: PROBLEM-SOLVING-->
+                <div class="part-left">
+                    <h4 class="part-label">PART 3: </h4>
+                    <h4 class="part-description">FINAL DRAFT</h4>
+
+                    <ul class="part-list">
+                        <li>Integrating My Research</li>
+                        <li><strong>Outcomes</strong></li>
+                        <ul>
+                            <li>A final product</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="images-right">
+                    <img src="assets/Graphic_Design/Quad_Cities_History/final_graphics.png">
+                    <p>Final Color Palette and Typography Hierarchy</p>
+                </div>
+        </div>
+    </body>
+
+
+    <footer>
+        <h4>Contact Me:</h4>
+        <h5>(563) 271-3339</h5>
+        <h5>meredith-onions@uiowa.edu</h5>
+    </footer>
+</html>

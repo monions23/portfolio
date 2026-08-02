@@ -1,0 +1,13 @@
+.images-right {
+  grid-column: span 8;
+}
+
+img {
+  width: 100%;
+}
+
+@media (max-width: 1020px) {
+  .images-right {
+    grid-column: span 12;
+  }
+}

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Meredith Onions Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap links to css and JavaScript-->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My Scripts and Stylesheets -->
+    <script src="js/responsive_nav.js"></script>
+    <link rel="stylesheet" href="./css/base.css" />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <!-- Navbar at top of screen -->
+  <div class="topnav" id="nav_bar">
+    <a class="link-item" href="index.html">Home</a>
+    <a class="link-item active" href="my_work.html">My Work</a>
+    <a class="link-item" href="about_me.html">About Me</a>
+    <a href="javascript:void(0);" class="icon" onclick="editResponsiveClass()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <body>
+    <!-- Display of projects - clickable cards that take user to corresponding project page -->
+    <div class="container-large mx-auto" style="width: 95%">
+      <div class="grid-container">
+        <!-- Course Demand Project -->
+        <div class="card width-full">
+          <div class="card-body-grid p-0">
+            <div class="video-wrapper">
+              <video autoplay muted playsinline>
+                <source
+                  id="video-100"
+                  src="assets/Data_Work/Course_Demand/reg_anim_demo.mp4"
+                />
+              </video>
+            </div>
+            <p class="project-title">
+              Leepfrog Technologies Course Demand Project
+            </p>
+            <p class="project-subtitle">
+              Designing an Animation and Implementing Interactive Features
+            </p>
+            <div class="button-container">
+              <button class="project-link" href="course_demand.html">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Cards -->
+
+        <div class="card">
+          <div class="card-body-grid p-0">
+            <div class="img-wrapper">
+              <img
+                src="assets/Data_Work/Analyzing_Info/box_plot_no_outliers.png"
+                alt="Student Gender vs Income No Outliers"
+              />
+            </div>
+            <p class="project-title">Removal of Outliers with Seaborn</p>
+            <p class="project-subtitle">Lessons in Data Cleansing</p>
+            <div class="button-container">
+              <button class="project-link" href="removing_outliers.html">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body-grid p-0">
+            <div class="img-wrapper">
+              <img
+                src="assets/Data_Work/GIS/bigfoot_sightings.jpg"
+                alt="Bigfoot Sightings Map"
+                id="video-100"
+              />
+            </div>
+            <p class="project-title">
+              Map of Bigfoot Sightings in the United States
+            </p>
+            <p class="project-subtitle">
+              Effectively Visualizing Spatial Data in ArcGIS Pro
+            </p>
+            <div class="button-container">
+              <button class="project-link" href="bigfoot_sightings.html">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body-grid p-0">
+            <div class="video-wrapper">
+              <video autoplay loop muted defaultMuted playsinline>
+                <source
+                  src="assets/Web_Projects/MotionFlix/browsing_demo (1).mp4"
+                />
+              </video>
+            </div>
+            <p class="project-title">MotionFlix</p>
+            <p class="project-subtitle">
+              Writing User Stories, Creating a Prototype, and Performing User
+              Tests
+            </p>
+            <div class="button-container">
+              <button class="project-link" href="motion_flix.html">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body-grid p-0">
+            <div class="video-wrapper">
+              <video autoplay loop muted defaultMuted playsinline>
+                <source
+                  src="assets/Web_Projects/Story_Carnival/story_carnival_demo (1).mp4"
+                />
+              </video>
+            </div>
+            <p class="project-title">Story Carnival</p>
+            <p class="project-subtitle">
+              Debugging and Maintaining a Pre-Existing Project
+            </p>
+            <div class="button-container">
+              <button class="project-link" href="story_carnival.html">
+                Learn More <i class="fa fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <h4>Contact Me:</h4>
+    <h5>(563) 271-3339</h5>
+    <h5>meredith-onions@uiowa.edu</h5>
+  </footer>
+</html>
