@@ -6,6 +6,10 @@ img {
   width: 100%;
 }
 
+.video-wrapper.qc-video-wrapper {
+  width: 85vw;
+}
+
 @media (max-width: 1020px) {
   .images-right {
     grid-column: span 12;
